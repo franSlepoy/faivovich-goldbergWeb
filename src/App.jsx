@@ -1,7 +1,8 @@
 
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import NavBar from "./components/NavBar/NavBar"
-import ImagenProyecto from "./components/textoImagenProyecto/ImagenProyecto"
-import TextoProyecto from "./components/textoImagenProyecto/TextoProyecto"
+import Home from "./components/pages/home/Home"
+
 
 
 
@@ -9,11 +10,12 @@ function App() {
    
 
   return (
-    <>
-      <NavBar/>
-      <TextoProyecto/>
-      <ImagenProyecto/>
-    </>
+    <BrowserRouter>
+    <NavBar/>
+     <Routes>
+       <Route path='/index' element={<Home/>}/>
+     </Routes>
+    </BrowserRouter>
   )
 }
 
