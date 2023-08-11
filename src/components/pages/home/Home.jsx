@@ -4,7 +4,7 @@ import React from 'react'
 const Home = () => {
   return (
     <>
-    <Box sx={{mt:20}}>
+    <Box >
      Home
     </Box>
      

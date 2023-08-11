@@ -6,11 +6,7 @@ import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
     const [open, setOpen] = useState(false);
-    const [infoMenuOpen, setInfoMenuOpen] = useState(false); // Estado para controlar el submenú
-    const linkStyle = {
-        textDecoration: 'none',
-       
-    };
+    const [infoMenuOpen, setInfoMenuOpen] = useState(false);
 
     // Función para manejar el clic en "INFO"
     const handleInfoClick = () => {
@@ -19,14 +15,20 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="fixed" color="inherit" sx={{ padding: -3, boxShadow: 0 }}>
+            <AppBar position="fixed"  sx={{ padding: -3, boxShadow: 0, backgroundColor: 'rgb(217, 217, 217)'  }}>
                 <Toolbar sx={{ justifyContent: "space-between" }}>
                     <Hidden smDown>
-                        <Typography style={linkStyle} sx={{ mt: -2, ml: 0 }} variant="h7" color={"black"} mt={3} ml={5} component={NavLink} to={"/index"}>INDEX</Typography>
+                        <Typography component={NavLink} to={"/index"} variant="h7" color="black" sx={{ mt: -2, ml: 0, textDecoration:"none" }}>
+                            INDEX
+                        </Typography>
                     </Hidden>
-                    <Typography style={linkStyle} sx={{ mt: -2 }} variant="h7" color={"black"} mt={3} ml={5}>FAIVOVICH & GOLDBERG</Typography>
+                    <Typography variant="h7" color="black" sx={{ mt: -2 }}>
+                        FAIVOVICH & GOLDBERG
+                    </Typography>
                     <Hidden smDown>
-                        <Typography style={{ ...linkStyle, cursor: 'pointer' }} sx={{ mt: -2 }} variant="h7" color={"black"} mt={3} ml={5} onClick={handleInfoClick}>INFO</Typography>
+                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer' }}>
+                            INFO
+                        </Typography>
                     </Hidden>
                     <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', fontSize: '2.5rem' }} color="inherit" onClick={() => setOpen(true)} />
                 </Toolbar>
@@ -41,18 +43,18 @@ const NavBar = () => {
             </Drawer>
 
             {/* Submenú de INFO */}
-            <Collapse in={infoMenuOpen} sx={{ position: 'absolute', right: 12, zIndex: 1, mt:-14 }}>
-                <List>
-                    <ListItem button sx={{ textAlign: 'right' }}>
+            <Collapse in={infoMenuOpen} sx={{ position: 'absolute', right: 12, zIndex: 1, mt: 6 }}>
+                <List sx={{ backgroundColor: 'rgb(217, 217, 217)' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
                         <ListItemText primary="EN—ES" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right' }}>
-                        <ListItemText  primary="BIOGRAPHY" />
+                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
+                        <ListItemText primary="BIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
                         <ListItemText primary="BIBLIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
                         <ListItemText primary="CONTACT" />
                     </ListItem>
                 </List>
