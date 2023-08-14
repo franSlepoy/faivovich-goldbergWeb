@@ -15,8 +15,8 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="fixed"  sx={{ padding: -3, boxShadow: 0, backgroundColor: 'rgb(217, 217, 217)'  }}>
-                <Toolbar sx={{ justifyContent: "space-between" }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: '#EFEFEF'  }}>
+                <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
                     <Hidden smDown>
                         <Typography component={NavLink} to={"/index"} variant="h7" color="black" sx={{ mt: -2, ml: 0, textDecoration:"none" }}>
                             INDEX
@@ -26,7 +26,7 @@ const NavBar = () => {
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     <Hidden smDown>
-                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer' }}>
+                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer', padding:0 }}>
                             INFO
                         </Typography>
                     </Hidden>
@@ -43,18 +43,18 @@ const NavBar = () => {
             </Drawer>
 
             {/* Submenú de INFO */}
-            <Collapse in={infoMenuOpen} sx={{ position: 'absolute', right: 12, zIndex: 1, mt: 6 }}>
-                <List sx={{ backgroundColor: 'rgb(217, 217, 217)' }}>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
+            <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -22 }}>
+                <List sx={{ backgroundColor: '#EFEFEF' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
                         <ListItemText primary="EN—ES" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0 }}>
                         <ListItemText primary="BIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
                         <ListItemText primary="BIBLIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black' }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
                         <ListItemText primary="CONTACT" />
                     </ListItem>
                 </List>
