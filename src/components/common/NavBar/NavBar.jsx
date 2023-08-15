@@ -18,7 +18,7 @@ const NavBar = () => {
             <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: '#EFEFEF'  }}>
                 <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
                     <Hidden smDown>
-                        <Typography component={NavLink} to={"/index"} variant="h7" color="black" sx={{ mt: -2, ml: 0, textDecoration:"none" }}>
+                        <Typography component={NavLink} to={"/index"} variant="h7" color="black" sx={{ mt: -2, ml: 0}}>
                             INDEX
                         </Typography>
                     </Hidden>
@@ -26,7 +26,7 @@ const NavBar = () => {
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     <Hidden smDown>
-                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer', padding:0 }}>
+                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline'}}>
                             INFO
                         </Typography>
                     </Hidden>
@@ -43,18 +43,18 @@ const NavBar = () => {
             </Drawer>
 
             {/* Submenú de INFO */}
-            <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -22 }}>
+            <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -21 }}>
                 <List sx={{ backgroundColor: '#EFEFEF' }}>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline' }}>
                         <ListItemText primary="EN—ES" />
                     </ListItem>
-                    <ListItem component={NavLink} to={"/biography"} button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0 }}>
+                    <ListItem component={NavLink} to={"/biography"} button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0, textDecoration: 'underline' }}>
                         <ListItemText primary="BIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
+                    <ListItem button component={NavLink} to={"/bibliography"} sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline' }}>
                         <ListItemText primary="BIBLIOGRAPHY" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
+                    <ListItem button component={NavLink} to={"/contacto"}  sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline' }}>
                         <ListItemText primary="CONTACT" />
                     </ListItem>
                 </List>
