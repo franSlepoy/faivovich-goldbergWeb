@@ -6,6 +6,7 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -16,7 +17,7 @@ export default function NavListDrawer() {
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="" >
+            <ListItemButton component={NavLink} to={"/index"} >
               <ListItemIcon>
               </ListItemIcon>
               <ListItemText primary="Index"/>
@@ -28,7 +29,7 @@ export default function NavListDrawer() {
       <nav aria-label="secondary mailbox folders">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" >
+            <ListItemButton component={NavLink} to={"/decomiso"} >
             <ListItemText primary="Decomiso"  />
             </ListItemButton>
           </ListItem>

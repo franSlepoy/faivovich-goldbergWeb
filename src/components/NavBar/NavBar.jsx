@@ -48,7 +48,7 @@ const NavBar = () => {
                     <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
                         <ListItemText primary="EN—ES" />
                     </ListItem>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0 }}>
+                    <ListItem component={NavLink} to={"/biography"} button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0 }}>
                         <ListItemText primary="BIOGRAPHY" />
                     </ListItem>
                     <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0 }}>
