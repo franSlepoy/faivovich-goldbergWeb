@@ -18,7 +18,7 @@ export const IndexData = [
     {id: 4,
         imagen: "/src/imagenes/index/numero.jpg", 
         titulo: "NUMERO",
-        link:"/decomiso"
+        link:"/numero"
     },
     {id: 5,
         imagen: "/src/imagenes/index/planetario.jpg", 
@@ -46,9 +46,9 @@ export const IndexData = [
         link:"/decomiso"
     },
     {id: 10,
-        imagen: "/src/imagenes/index/numero.jpg", 
+        imagen: "/src/imagenes/index/planetario.jpg", 
         titulo: "METEORIT, “EL TACO”",
-        link:"/decomiso"
+        link:"/elTaco"
     },
     
     
