@@ -13,8 +13,8 @@ const Home = () => {
 
     return (
         <>
-            <Box sx={{ margin: "auto", width: 1200, position: "relative" }}>
-                <ImageList sx={{ mt: 26, overflow: 'hidden' }} variant="standard" cols={5} gap={8}>
+            <Box sx={{ margin: "auto", width: 1200, position: "relative", mb:30 }}>
+                <ImageList sx={{ mt: 26, overflow: 'hidden' }} variant="standard" cols={5} gap={72}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}

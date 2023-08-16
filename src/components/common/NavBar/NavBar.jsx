@@ -15,18 +15,18 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: '#EFEFEF'  }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: "transparent"  }}>
                 <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
                     <Hidden smDown>
-                        <Typography component={NavLink} to={"/index"} variant="h7" color="black" sx={{ mt: -2, ml: 0}}>
+                        <Typography component={NavLink} to={"/index"}  sx={{ mt: -2, ml: 0,}}>
                             INDEX
                         </Typography>
                     </Hidden>
-                    <Typography variant="h7" color="black" sx={{ mt: -2 }}>
+                    <Typography  color="black" sx={{ mt: -2 }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     <Hidden smDown>
-                        <Typography onClick={handleInfoClick} variant="h7" color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline'}}>
+                        <Typography onClick={handleInfoClick}  color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline',}}>
                             INFO
                         </Typography>
                     </Hidden>
@@ -43,10 +43,10 @@ const NavBar = () => {
             </Drawer>
 
             {/* Submenú de INFO */}
-            <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -21 }}>
-                <List sx={{ backgroundColor: '#EFEFEF' }}>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline' }}>
-                        <ListItemText primary="EN—ES" />
+            <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -22 }}>
+                <List sx={{ backgroundColor: "transparent" }}>
+                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline', }}>
+                        <ListItemText primary="EN—ES" sx={{fontFamily:"sans-serif",fontSize:19, fontWeight: 600}} />
                     </ListItem>
                     <ListItem component={NavLink} to={"/biography"} button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0, textDecoration: 'underline' }}>
                         <ListItemText primary="BIOGRAPHY" />
