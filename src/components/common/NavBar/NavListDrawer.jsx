@@ -13,41 +13,37 @@ import { NavLink } from 'react-router-dom';
 export default function NavListDrawer() {
   return (
     
-      <Box sx={{ width: '100%', maxWidth: 200, bgcolor: 'background.paper' }}>
+      <Box sx={{ width: '100%', maxWidth: 200, bgcolor: "#EFEFEF", }}>
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/index"} >
               <ListItemIcon>
               </ListItemIcon>
-              <ListItemText primary="INDEX"/>
+              <ListItemText primaryTypographyProps={{ fontSize: '16px' }} sx={{ml:-7, }} primary="INDEX"/>
             </ListItemButton>
           </ListItem>
         </List>
       </nav>
       <Divider />
-      <nav aria-label="secondary mailbox folders">
+      <nav aria-label="secondary mailbox folders" >
         <List>
-          <ListItem disablePadding>
+          <ListItem disablePadding >
             <ListItemButton component={NavLink} to={"/biography"} >
-            <ListItemText primary="BIOGRAPHY"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIOGRAPHY"  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/bibliography"} >
-            <ListItemText primary="BIBLIOGRAPHY"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIBLIOGRAPHY"  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/contacto"} >
-            <ListItemText primary="CONTACTO"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }}  primary="CONTACTO"  />
             </ListItemButton>
           </ListItem>
-          <ListItem disablePadding>
-            <ListItemButton component="a" >
-            <ListItemText primary="Otro proyecto"  />
-            </ListItemButton>
-          </ListItem>
+          
           
         </List>
       </nav>
