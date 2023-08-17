@@ -20,7 +20,7 @@ export default function NavListDrawer() {
             <ListItemButton component={NavLink} to={"/index"} >
               <ListItemIcon>
               </ListItemIcon>
-              <ListItemText primary="Index"/>
+              <ListItemText primary="INDEX"/>
             </ListItemButton>
           </ListItem>
         </List>
@@ -29,18 +29,18 @@ export default function NavListDrawer() {
       <nav aria-label="secondary mailbox folders">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component={NavLink} to={"/decomiso"} >
-            <ListItemText primary="Decomiso"  />
+            <ListItemButton component={NavLink} to={"/biography"} >
+            <ListItemText primary="BIOGRAPHY"  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" >
-            <ListItemText primary="Encuentro con el Mataco"  />
+            <ListItemButton component={NavLink} to={"/bibliography"} >
+            <ListItemText primary="BIBLIOGRAPHY"  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" >
-            <ListItemText primary="Otro proyecto"  />
+            <ListItemButton component={NavLink} to={"/contacto"} >
+            <ListItemText primary="CONTACTO"  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>

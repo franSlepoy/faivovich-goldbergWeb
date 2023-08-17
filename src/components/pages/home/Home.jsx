@@ -13,8 +13,8 @@ const Home = () => {
 
     return (
         <>
-            <Box sx={{ margin: "auto", width: 1200, position: "relative", mb:30 }}>
-                <ImageList sx={{ mt: 26, overflow: 'hidden' }} variant="standard" cols={5} gap={72}>
+            <Box sx={{ margin: "auto", width: 1200, position: "relative", mb:30, display: { xs: "none", sm:"block"} }}>
+                <ImageList sx={{ mt: 26, overflow: 'hidden', textTransform:"uppercase"  }} variant="standard" cols={5} gap={72}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
@@ -27,7 +27,7 @@ const Home = () => {
                         >
                             <Typography
                                 color="black"
-                                sx={{ textAlign: "center", fontSize: "19", width:180 }}
+                                sx={{ textAlign: "center", fontSize: "19", width:180, fontFamily:'Albert Sans' }}
                             >
                                 {seccion.titulo}
                             </Typography>
@@ -52,6 +52,11 @@ const Home = () => {
                         </ImageListItem>
                     ))}
                 </ImageList>
+            </Box>
+            <Box sx ={{mt:8, display: { xs: "block", sm:"none"}}}>
+                {IndexData.map((proyecto) => (
+                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', textDecoration:"none", display:"block"}} key={proyecto.id} mt={3} >{proyecto.titulo}</Typography>
+                ))}
             </Box>
         </>
     );
