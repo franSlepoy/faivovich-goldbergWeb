@@ -13,14 +13,14 @@ import { NavLink } from 'react-router-dom';
 export default function NavListDrawer() {
   return (
     
-      <Box sx={{ width: '100%', maxWidth: 200, bgcolor: "#EFEFEF", }}>
+      <Box sx={{  width: 200,  height:"100%", bgcolor: "rgba(239, 239, 239)" }}>
       <nav aria-label="main mailbox folders">
         <List>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/index"} >
               <ListItemIcon>
               </ListItemIcon>
-              <ListItemText primaryTypographyProps={{ fontSize: '16px' }} sx={{ml:-7, }} primary="INDEX"/>
+              <ListItemText primaryTypographyProps={{ fontSize: '16px' }} sx={{ml:-4 }} primary="INDEX"/>
             </ListItemButton>
           </ListItem>
         </List>
@@ -30,17 +30,17 @@ export default function NavListDrawer() {
         <List>
           <ListItem disablePadding >
             <ListItemButton component={NavLink} to={"/biography"} >
-            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIOGRAPHY"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIOGRAPHY" sx={{ml:3 }}  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/bibliography"} >
-            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIBLIOGRAPHY"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }} primary="BIBLIOGRAPHY" sx={{ml:3 }}  />
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
             <ListItemButton component={NavLink} to={"/contacto"} >
-            <ListItemText primaryTypographyProps={{ fontSize: '16px' }}  primary="CONTACTO"  />
+            <ListItemText primaryTypographyProps={{ fontSize: '16px' }}  primary="CONTACTO" sx={{ml:3 }}  />
             </ListItemButton>
           </ListItem>
           

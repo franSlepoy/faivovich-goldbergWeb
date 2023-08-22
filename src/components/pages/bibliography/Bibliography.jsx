@@ -6,7 +6,7 @@ const Bibliography = () => {
   return (
     <>
     <Box margin={"auto"} width={600} sx={{display: { xs: "none", sm:"block"}}} >
-      <Typography sx={{mt: 26,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHY</Typography>
+      <Typography sx={{mt:20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHY</Typography>
       <Typography sx={{ textAlign:"center",mt:3, fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo Rosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>
       <Typography sx={{ textAlign:"center",mt:3,fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo Rosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>
       <Typography sx={{ textAlign:"center",mt:3,fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo Rosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>

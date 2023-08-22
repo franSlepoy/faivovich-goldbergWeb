@@ -7,7 +7,7 @@ const Biography = () => {
   return (
     <>
     <Box margin={"auto"} width={460} sx={{display: { xs: "none", sm:"block"}}}>
-      <Typography sx={{mt: 26,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
+      <Typography sx={{mt: 20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
       <Typography sx={{ fontSize:19, fontFamily:"Albert Sans",}} variant='h3'>Faivovich & Goldberg </Typography>
       <Typography sx={{ fontSize:15, fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>
       <Typography sx={{ mt:5, fontSize:15, fontFamily:"Albert Sans",textIndent:42}} variant="subtitle2"> 

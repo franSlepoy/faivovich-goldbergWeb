@@ -15,7 +15,7 @@ const NavBar = () => {
 
     return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: "transparent"  }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, bgcolor:"transparent" }}>
                 <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
                     <Hidden smDown>
                         <Typography component={NavLink} to={"/index"}  sx={{ mt: -2, ml: 0, fontFamily:'Albert Sans'}}>
@@ -61,6 +61,8 @@ const NavBar = () => {
                 open={open}
                 anchor={'right'}
                 onClose={() => setOpen(false)}
+                
+    
             >
                 <NavListDrawer />
             </Drawer>

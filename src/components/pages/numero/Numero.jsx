@@ -8,7 +8,7 @@ import { NumeroData } from '../../../servidor/NumeroData';
 export default function Numero() {
   return (
     <>
-<Box mt={26} mb={5}>
+<Box mt={20} ml={-6} mb={5}>
   <Typography sx={{textAlign:"center", fontSize:33, fontFamily: 'Albert Sans', }} variant="h4">NÚMERO</Typography>
   <Typography sx={{ textAlign:"center",  fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">(2014 - ongoing)</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:23, fontFamily: 'Albert Sans' }} variant="h6">SERIES</Typography>
