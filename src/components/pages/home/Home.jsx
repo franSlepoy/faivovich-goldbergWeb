@@ -5,16 +5,21 @@ import { NavLink } from 'react-router-dom';
 import { IndexData } from '../../../servidor/IndexData';
 
 const Home = () => {
+    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
     const linkStyle = {
         textDecoration: 'none',
     };
+    const underlineStyle = {
+        textDecoration: 'underline',
+    };
+    
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <>
-            <Box sx={{ margin: "auto", width: 1200, position: "relative", mb:30, display: { xs: "none", sm:"block"} }}>
-                <ImageList sx={{ mt: 26, overflow: 'hidden', textTransform:"uppercase"  }} variant="standard" cols={5} gap={72}>
+            <Box sx={{  ml:14, width: "90%", position: "relative", mb:40, display: { xs: "none", sm:"block"} }}>
+                <ImageList sx={{ mt: 26, mb:30, overflow: 'hidden', textTransform:"uppercase"  }} variant="standard" cols={5} gap={0}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
@@ -24,10 +29,22 @@ const Home = () => {
                             sx={{ color: "black", mb: 10, position: "relative" }}
                             onMouseEnter={() => setHoveredIndex(index)} // Establecer el índice cuando el cursor entra
                             onMouseLeave={() => setHoveredIndex(null)} // Restablecer el índice cuando el cursor sale
+                            onMouseMove={(e) => {
+                                const boundingRect = e.currentTarget.getBoundingClientRect();
+                                const offsetX = e.clientX - boundingRect.left;
+                                const offsetY = e.clientY - boundingRect.top;
+                                setCursorPosition({ x: offsetX, y: offsetY });
+                            }}
                         >
                             <Typography
                                 color="black"
-                                sx={{ textAlign: "center", fontSize: "19", width:180, fontFamily:'Albert Sans' }}
+                                sx={{
+                                    textAlign: "center",
+                                    fontSize: "19",
+                                    width: 180,
+                                    fontFamily: 'Albert Sans',
+                                    ...(hoveredIndex === index && underlineStyle), // Agrega el estilo si el cursor está sobre el título
+                                }}
                             >
                                 {seccion.titulo}
                             </Typography>
@@ -38,13 +55,13 @@ const Home = () => {
                                 alt={seccion.titulo}
                                 style={{
                                     position: "absolute",
-                                    top: "50%",           // Centra verticalmente la imagen en el título
-                                    left: "50%",        // Centra horizontalmente la imagen en el título
-                                    transform: "translate(-50%, -50%)",  // Ajusta la posición para centrar correctamente
-                                    width: "100%",        // Asegura que la imagen no se corte y llene el contenedor
-                                    height: "100%",       // Asegura que la imagen no se corte y llene el contenedor
-                                    objectFit: "contain", // Ajusta cómo se ajusta la imagen dentro del contenedor
-                                    objectPosition: "right  bottom", // Ajusta la posición de la imagen dentro del contenedor
+                                    zIndex:1,      
+                                     
+                                    width: "100%",        
+                                    /* height:"100%" , */      
+                                    objectFit: "contain", 
+                                    objectPosition: " center top", // Ajusta la posición de la imagen dentro del contenedor
+                                    transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
                                 }}
                             />
                             )}

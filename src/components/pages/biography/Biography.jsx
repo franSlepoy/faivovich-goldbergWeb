@@ -1,12 +1,13 @@
 import { Typography } from '@mui/material'
 import { Box } from '@mui/system'
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink } from "react-router-dom"
 
 const Biography = () => {
+  const [isCvHovered, setIsCvHovered] = useState(false);
   return (
     <>
-    <Box margin={"auto"} width={460} sx={{display: { xs: "none", sm:"block"}}}>
+    <Box ml={-6} margin={"auto"} width={460} sx={{display: { xs: "none", sm:"block"}}}>
       <Typography sx={{mt: 20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
       <Typography sx={{ fontSize:19, fontFamily:"Albert Sans",}} variant='h3'>Faivovich & Goldberg </Typography>
       <Typography sx={{ fontSize:15, fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>
@@ -16,7 +17,10 @@ const Biography = () => {
       <Typography sx={{with:400, mb:5, ml:5, fontSize:15, fontFamily:"Albert Sans", textIndent:42}} variant="subtitle2"> 
       Some of Faivovich & Goldberg’s latest projects are Encuentro con el El Mataco (Museo Histórico Provincial de Rosario Julio Marc, 2019), Mesón de Fierro: Towards the XXII Century (United Nations, Vienna, 2019), Auf der Suche nach Mesón de Fierro (Naturhistorisches Museum, Vienna, 2018), Decomiso (ASU Art Museum, Arizona, 2018), Un meteorito para la Sociedad Científica del año 2105 (U-Turn, ArteBA, Buenos Aires, 2018), numero (11 Gwangju Biennal, South Korea, 2016), The San Juan Mass of Campo del Cielo en la Colección Guerrico (Museo Nacional de Bellas Artes).
        </Typography>
-     <Box component={NavLink} to={"/index"}>
+     <Box component={NavLink} to={"/index"}
+      onMouseEnter={() => setIsCvHovered(true)}
+      onMouseLeave={() => setIsCvHovered(false)}
+      sx={{textDecoration: isCvHovered? "underline" : "none"}} >
      <Typography sx={{fontSize:19, fontFamily:"Albert Sans", mb:15, mt:8}}>Curriculum Vitae</Typography>
      </Box>
 </Box>

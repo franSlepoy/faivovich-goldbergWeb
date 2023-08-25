@@ -1,40 +1,49 @@
-import { AppBar, Button, Drawer, Toolbar, Typography, Hidden, List, ListItem, ListItemText, Collapse } from '@mui/material';
-import React, { useState } from 'react';
-import NavListDrawer from './NavListDrawer';
+import { AppBar, Button,  Toolbar, Typography, Hidden, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
+import { useState } from 'react';
 
 const NavBar = () => {
-    const [open, setOpen] = useState(false);
-    const [infoMenuOpen, setInfoMenuOpen] = useState(false);
-
-    // Función para manejar el clic en "INFO"
-    const handleInfoClick = () => {
-        setInfoMenuOpen(!infoMenuOpen);
-    };
-
-    return (
+    const [isIndexHovered, setIsIndexHovered] = useState(false);
+    const [isBioHovered, setIsBioHovered] = useState(false);
+    const [isBiblioHovered, setIsBiblioHovered] = useState(false);
+    const [isContactHovered, setIsContactHovered] = useState(false);
+    
+   return (
         <>
             <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, bgcolor:"transparent" }}>
                 <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
+                    
                     <Hidden smDown>
-                        <Typography component={NavLink} to={"/index"}  sx={{ mt: -2, ml: 0, fontFamily:'Albert Sans'}}>
+                        <Typography component={NavLink} 
+                                    to={"/index"} 
+                                    onMouseEnter={() => setIsIndexHovered(true)}
+                                    onMouseLeave={() => setIsIndexHovered(false)} 
+                                    sx={{ 
+                                        mt: -2, ml: 0, fontFamily:'Albert Sans',
+                                        textDecoration: isIndexHovered ? 'underline' : 'none',
+                                        }}>
                             INDEX
                         </Typography>
-                    </Hidden>
+                     </Hidden>
+                    
                     <Typography  color="black" sx={{ mt: -2, fontFamily:'Albert Sans' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
+                    
                     <Hidden smDown>
-                        <Typography component={NavLink} to={"/biography"}   color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline',fontFamily:'Albert Sans'}}>
+                        <Typography component={NavLink} 
+                        to={"/biography"} 
+                        onMouseEnter={() => setIsBioHovered(true)}
+                        onMouseLeave={() => setIsBioHovered(false)}
+                        color="black" 
+                        sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        textDecoration: isBioHovered ? 'underline' : 'none',
+                        }}>
                             BIOGRAPHY
                         </Typography>
                     </Hidden>
-                    {/* <Hidden smDown>
-                        <Typography onClick={handleInfoClick}  color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline',fontFamily:'Albert Sans'}}>
-                            INFO
-                        </Typography>
-                    </Hidden> */}
+                    
                     <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', fontSize: '2.5rem' }} color="inherit" onClick={() => setOpen(true)} />
                 </Toolbar>
             </AppBar>
@@ -42,48 +51,41 @@ const NavBar = () => {
             <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, backgroundColor: "transparent", mt:88 }}>
                 <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
                     <Hidden smDown>
-                        <Typography component={NavLink} to={"/bibliography"} sx={{  ml: 0, fontFamily:'Albert Sans'}}>
+                        <Typography component={NavLink} to={"/bibliography"} 
+                        onMouseEnter={() => setIsBiblioHovered(true)}
+                        onMouseLeave={() => setIsBiblioHovered(false)}
+                        sx={{  ml: 0, fontFamily:'Albert Sans',
+                        textDecoration: isBiblioHovered? "underline" : "none" }}>
                         BIBLIOGRAPHY
                         </Typography>
                     </Hidden>
                     
                     <Hidden smDown>
-                        <Typography  component={NavLink} to={"/contacto"}  color="black" sx={{ mt: -2, cursor: 'pointer', padding:0,textDecoration: 'underline',fontFamily:'Albert Sans'}}>
+                        <Typography  component={NavLink} to={"/contacto"}  
+                        onMouseEnter={() => setIsContactHovered(true)}
+                        onMouseLeave={() => setIsContactHovered(false)}
+                        sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        textDecoration: isContactHovered? "underline" : "none",
+                        }}>
                          CONTACT
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', fontSize: '2.5rem' }} color="inherit" onClick={() => setOpen(true)} />
+                    
+                    <Hidden smUp>
+    {/* Usar un IconButton con el icono del menú hamburguesa */}
+    <NavLink to="/contacto" style={{ marginLeft: 'auto', marginRight: '5px', padding: 0 }}>
+        <IconButton sx={{ fontSize: '2.5rem', color: 'black' }}>
+            <MenuIcon />
+        </IconButton>
+    </NavLink>
+    </Hidden>
                 </Toolbar>
             </AppBar>
 
-            <Drawer
-                open={open}
-                anchor={'right'}
-                onClose={() => setOpen(false)}
-                
-    
-            >
-                <NavListDrawer />
-            </Drawer>
+            
 
-            {/* Submenú de INFO */}
-           {/*  <Collapse in={infoMenuOpen} sx={{ position: 'fixed', right: 26, zIndex: 3, mt: -22 }}>
-                <List sx={{ backgroundColor: "transparent" }}>
-                    <ListItem button sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline',fontFamily:'Albert Sans' }}>
-                        <ListItemText primary="EN—ES"  />
-                    </ListItem>
-                    <ListItem component={NavLink} to={"/biography"} button sx={{ textAlign: 'right', color: 'black',mt:0, padding:0, textDecoration: 'underline',fontFamily:'Albert Sans' }}>
-                        <ListItemText primary="BIOGRAPHY" />
-                    </ListItem>
-                    <ListItem button component={NavLink} to={"/bibliography"} sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline', fontFamily:'Albert Sans' }}>
-                        <ListItemText primary="BIBLIOGRAPHY" />
-                    </ListItem>
-                    <ListItem button component={NavLink} to={"/contacto"}  sx={{ textAlign: 'right', color: 'black', mt:0, padding:0, textDecoration: 'underline', fontFamily:'Albert Sans' }}>
-                        <ListItemText primary="CONTACT" />
-                    </ListItem>
-                </List>
-            </Collapse> */}
+        
         </>
     );
 };
