@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 import { IndexData } from '../../../servidor/IndexData';
 
 const Home = () => {
-    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+    const [cursorPosition, setCursorPosition] = useState({ x: -0, y: 0 });
     const linkStyle = {
         textDecoration: 'none',
     };
@@ -43,6 +43,7 @@ const Home = () => {
                                     fontSize: "19",
                                     width: 180,
                                     fontFamily: 'Albert Sans',
+                                    zIndex:3,
                                     ...(hoveredIndex === index && underlineStyle), // Agrega el estilo si el cursor está sobre el título
                                 }}
                             >
@@ -55,12 +56,12 @@ const Home = () => {
                                 alt={seccion.titulo}
                                 style={{
                                     position: "absolute",
-                                    zIndex:1,      
+                                    zIndex:2,      
                                      
                                     width: "100%",        
-                                    /* height:"100%" , */      
+                                    height:"100%" ,      
                                     objectFit: "contain", 
-                                    objectPosition: " center top", // Ajusta la posición de la imagen dentro del contenedor
+                                    objectPosition: "center center", 
                                     transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
                                 }}
                             />

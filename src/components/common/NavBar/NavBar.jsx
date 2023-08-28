@@ -44,7 +44,8 @@ const NavBar = () => {
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', fontSize: '2.5rem' }} color="inherit" onClick={() => setOpen(true)} />
+                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', mt:-1 }} color="inherit" component={NavLink} to={"/menuMobile"} />
+                
                 </Toolbar>
             </AppBar>
 
@@ -61,7 +62,7 @@ const NavBar = () => {
                     </Hidden>
                     
                     <Hidden smDown>
-                        <Typography  component={NavLink} to={"/contacto"}  
+                        <Typography  component={NavLink} to={"/contact"}  
                         onMouseEnter={() => setIsContactHovered(true)}
                         onMouseLeave={() => setIsContactHovered(false)}
                         sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
@@ -72,14 +73,7 @@ const NavBar = () => {
                     </Hidden>
                     
                     
-                    <Hidden smUp>
-    {/* Usar un IconButton con el icono del menú hamburguesa */}
-    <NavLink to="/contacto" style={{ marginLeft: 'auto', marginRight: '5px', padding: 0 }}>
-        <IconButton sx={{ fontSize: '2.5rem', color: 'black' }}>
-            <MenuIcon />
-        </IconButton>
-    </NavLink>
-    </Hidden>
+          
                 </Toolbar>
             </AppBar>
 

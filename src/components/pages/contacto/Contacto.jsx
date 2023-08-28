@@ -1,4 +1,4 @@
-import { Box, Typography } from '@mui/material'
+import { Box, Hidden, Typography } from '@mui/material'
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 
@@ -9,6 +9,7 @@ const Contacto = () => {
   
   return (
     <>
+    <Hidden smDown>
     <Box ml={-6}>
     <Box margin={"auto"} width={600} sx={{display: { xs: "none", sm:"block"}}}  >
       <Typography sx={{mt: 20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
@@ -22,7 +23,7 @@ const Contacto = () => {
     style={{
         textDecoration: isMailHovered ? 'underline' : 'none',
         pointerEvents: 'auto',
-        display: 'block', // Ensure the link takes full width
+        display: 'block', 
         textAlign: "center",
         mt: 3,
         fontSize: 18,
@@ -64,6 +65,17 @@ const Contacto = () => {
        <Typography sx={{ mb: 15, textAlign:"center",fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>BUENOS AIRES, ARG +54 11 4978 3759</Typography>
      </Box>
      </Box>
+    </Hidden>
+
+    <Hidden smUp>
+    <Typography sx={{mt: 12, fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
+       <Typography sx={{ mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>mail@faivovichgoldberg.com </Typography>
+       <Link to={"https://www.barro.cc/es"} target={"_blank"}>
+       <Typography  sx={{ mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>BARRO ARTE CONTEMPORANEO </Typography>
+       </Link>
+       <Typography sx={{fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>BUENOS AIRES, ARG +54 11 4978 3759</Typography>
+    </Hidden>
+    
      </>
 
   )

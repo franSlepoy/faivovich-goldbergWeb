@@ -1,5 +1,6 @@
 
 import { BrowserRouter, Route, Routes } from "react-router-dom"
+import MenuMobile from "./components/common/NavBar/MenuMobile"
 import NavBar from "./components/common/NavBar/NavBar"
 import Bibliography from "./components/pages/bibliography/Bibliography"
 import Biography from "./components/pages/biography/Biography"
@@ -20,7 +21,8 @@ function App() {
     <NavBar/>
      <Routes>
        <Route path='/index' element={<Home/>}/>
-       <Route path='/contacto' element={<Contacto/>}/>
+       <Route path='/menuMobile' element={<MenuMobile/>}/>
+       <Route path='/contact' element={<Contacto/>}/>
        <Route path='/biography' element={<Biography/>}/>
        <Route path='/bibliography' element={<Bibliography/>}/>
        <Route path='/decomiso' element={<Decomiso/>}/>
