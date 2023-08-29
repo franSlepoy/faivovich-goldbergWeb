@@ -44,7 +44,7 @@ const NavBar = () => {
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, marginLeft: 'auto', marginRight: '5px', mt:-1 }} color="inherit" component={NavLink} to={"/menuMobile"} />
+                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, mt:-1 }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
                 
                 </Toolbar>
             </AppBar>

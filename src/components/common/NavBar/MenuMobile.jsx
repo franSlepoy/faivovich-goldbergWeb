@@ -10,16 +10,16 @@ const MenuMobile = () => {
       <Typography sx={{fontFamily:'Albert Sans', textDecoration:"none"}} component={NavLink} to={"/index"}>
         INDEX
       </Typography>
-      <Typography sx={{fontFamily:'Albert Sans', mt: 1, textDecoration:"none"}} component={NavLink} to={"/biography"}>
+      <Typography sx={{fontFamily:'Albert Sans', mt: 2, textDecoration:"none"}} component={NavLink} to={"/biography"}>
         BIOGRAPHY
       </Typography>
-      <Typography sx={{fontFamily:'Albert Sans', mt:1, textDecoration:"none"}} component={NavLink} to={"/bibliography"}>
+      <Typography sx={{fontFamily:'Albert Sans', mt:2, textDecoration:"none"}} component={NavLink} to={"/bibliography"}>
         BIBLIOGRAPHY
       </Typography>
-      <Typography sx={{fontFamily:'Albert Sans', mt:1, textDecoration:"none"}} component={NavLink} to={"/contact"}>
+      <Typography sx={{fontFamily:'Albert Sans', mt:2, textDecoration:"none"}} component={NavLink} to={"/contact"}>
         CONTACT
       </Typography>
-      <Typography sx={{fontFamily:'Albert Sans', mt:1, textDecoration:"none"}}>
+      <Typography sx={{fontFamily:'Albert Sans', mt:2, textDecoration:"none"}}>
         ENG / ESP
       </Typography>
     </Box>
