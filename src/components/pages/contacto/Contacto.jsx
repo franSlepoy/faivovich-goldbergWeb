@@ -10,7 +10,7 @@ const Contacto = () => {
   return (
     <>
     <Hidden smDown>
-    <Box ml={-6}>
+    <Box >
     <Box margin={"auto"} width={600} sx={{display: { xs: "none", sm:"block"}}}  >
       <Typography sx={{mt: 20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
     <Box mb={2}>

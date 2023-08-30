@@ -2,13 +2,13 @@ export const IndexData = [
     {id: 1,
      imagen: "/src/imagenes/index/planetario.jpg",
      titulo: "Encuentro con el mataco",
-     link:"/decomiso"
+     link:"/elTaco"
     
     },
     {id: 2,
         imagen: "/src/imagenes/index/numero.jpg",
         titulo: "A. 18 / Auf der surche nach mesón",
-        link:"/decomiso"
+        link:"/numero"
         },
     {id: 3,
         imagen: "/src/imagenes/index/decomiso.jpg", 
@@ -28,17 +28,17 @@ export const IndexData = [
     {id: 6,
         imagen: "/src/imagenes/index/decomiso.jpg", 
         titulo: "The towerof knowledge",
-        link:"/decomiso"
+        link:"/numero"
     },
     {id: 7,
         imagen: "/src/imagenes/index/numero.jpg", 
         titulo: "The San Juan mass Campo de cielo en la colección guerrico",
-        link:"/decomiso"
+        link:"/eltaco"
     },
     {id: 8,
         imagen: "/src/imagenes/index/planetario.jpg", 
         titulo: "The weight of uncertainty",
-        link:"/decomiso"
+        link:"/numero"
     },
     {id: 9,
         imagen: "/src/imagenes/index/decomiso.jpg", 

@@ -11,8 +11,8 @@ const NavBar = () => {
     
    return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, padding: 0, boxShadow: 0, bgcolor:"transparent" }}>
-                <Toolbar sx={{ justifyContent: "space-between", padding:0 }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, padding:1, ml:1, mt:0, boxShadow: 0, bgcolor:"transparent"  }}>
+                <Toolbar sx={{ justifyContent: "space-between", width:"100%", padding:0 }}>
                     
                     <Hidden smDown>
                         <Typography component={NavLink} 
@@ -20,16 +20,23 @@ const NavBar = () => {
                                     onMouseEnter={() => setIsIndexHovered(true)}
                                     onMouseLeave={() => setIsIndexHovered(false)} 
                                     sx={{ 
-                                        mt: -2, ml: 0, fontFamily:'Albert Sans',
+                                        mt: 0, ml: 0, fontFamily:'Albert Sans',
                                         textDecoration: isIndexHovered ? 'underline' : 'none',
                                         }}>
                             INDEX
                         </Typography>
                      </Hidden>
-                    
-                    <Typography  color="black" sx={{ mt: -2, fontFamily:'Albert Sans' }}>
+                    <Hidden smDown>
+                    <Typography  color="black" sx={{ ml:-3,  fontFamily:'Albert Sans' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
+                    </Hidden>
+                    <Hidden smUp>
+                    <Typography  color="black" sx={{ fontFamily:'Albert Sans' }}>
+                        FAIVOVICH & GOLDBERG
+                    </Typography>
+                    </Hidden>
+                    
                     
                     <Hidden smDown>
                         <Typography component={NavLink} 
@@ -40,7 +47,7 @@ const NavBar = () => {
                         sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isBioHovered ? 'underline' : 'none',
                         }}>
-                            BIOGRAPHY
+                            BIO
                         </Typography>
                     </Hidden>
                     
@@ -55,9 +62,9 @@ const NavBar = () => {
                         <Typography component={NavLink} to={"/bibliography"} 
                         onMouseEnter={() => setIsBiblioHovered(true)}
                         onMouseLeave={() => setIsBiblioHovered(false)}
-                        sx={{  ml: 0, fontFamily:'Albert Sans',
+                        sx={{ fontFamily:'Albert Sans',
                         textDecoration: isBiblioHovered? "underline" : "none" }}>
-                        BIBLIOGRAPHY
+                        BIBLIO
                         </Typography>
                     </Hidden>
                     
@@ -65,7 +72,7 @@ const NavBar = () => {
                         <Typography  component={NavLink} to={"/contact"}  
                         onMouseEnter={() => setIsContactHovered(true)}
                         onMouseLeave={() => setIsContactHovered(false)}
-                        sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        sx={{ cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isContactHovered? "underline" : "none",
                         }}>
                          CONTACT

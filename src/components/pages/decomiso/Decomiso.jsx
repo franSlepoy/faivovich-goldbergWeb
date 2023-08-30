@@ -8,7 +8,7 @@ import { Typography } from '@mui/material';
 export default function Decomiso() {
   return (
     <>
-<Box mt={20} ml={-6} mb={5} sx={{display: { xs: "none", sm:"block"}}}>
+<Box  mt={20}  mb={5} sx={{display: { xs: "none", sm:"block"}}}>
   <Typography sx={{textAlign:"center", fontSize:33, fontFamily: 'Albert Sans', }} variant="h4">DECOMISO</Typography>
   <Typography sx={{ textAlign:"center",  fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">ASU Art Museum. Arizona, USA</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:23, fontFamily: 'Albert Sans' }} variant="h6">EXHIBITION</Typography>

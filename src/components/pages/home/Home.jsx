@@ -18,15 +18,15 @@ const Home = () => {
 
     return (
         <>
-            <Box sx={{  ml:14, width: "90%", position: "relative", mb:40, display: { xs: "none", sm:"block"} }}>
-                <ImageList sx={{ mt: 26, mb:30, overflow: 'hidden', textTransform:"uppercase"  }} variant="standard" cols={5} gap={0}>
+            <Box sx={{  margin:"auto", width: "75%", position: "relative", mb:40, display: { xs: "none", sm:"block"} }}>
+                <ImageList sx={{ ml: 0,mt: 18,mb:18,  overflow: 'hidden'   }} variant="standard" cols={4} gap={0}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
                             component={NavLink}
                             to={seccion.link}
                             style={linkStyle}
-                            sx={{ color: "black", mb: 10, position: "relative" }}
+                            sx={{ color: "black", mb:5, position: "relative", width:"180px", height:"100px" }}
                             onMouseEnter={() => setHoveredIndex(index)} // Establecer el índice cuando el cursor entra
                             onMouseLeave={() => setHoveredIndex(null)} // Restablecer el índice cuando el cursor sale
                             onMouseMove={(e) => {
@@ -39,6 +39,7 @@ const Home = () => {
                             <Typography
                                 color="black"
                                 sx={{
+                                    m:5,
                                     textAlign: "center",
                                     fontSize: "19",
                                     width: 180,
@@ -71,7 +72,7 @@ const Home = () => {
                     ))}
                 </ImageList>
             </Box>
-            <Box sx ={{mt:8, display: { xs: "block", sm:"none"}}}>
+            <Box sx ={{mt:8,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
                     <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', textDecoration:"none", display:"block"}} key={proyecto.id} mt={3} >{proyecto.titulo}</Typography>
                 ))}

@@ -8,7 +8,7 @@ import { ElTacoData } from '../../../servidor/ElTacoData';
 export default function ElTaco() {
   return (
     <>
-<Box mt={20} ml={-6} mb={5}>
+<Box mt={20}  mb={5}>
   <Typography sx={{textAlign:"center", fontSize:33, fontFamily: 'Albert Sans', }} variant="h4"> METEORIT, "EL TACO"</Typography>
   <Typography sx={{ textAlign:"center",  fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">(2010)</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:23, fontFamily: 'Albert Sans' }} variant="h6">EXHIBITION </Typography>

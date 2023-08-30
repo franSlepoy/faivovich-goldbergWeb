@@ -7,7 +7,7 @@ const Biography = () => {
   const [isCvHovered, setIsCvHovered] = useState(false);
   return (
     <>
-    <Box ml={-6} margin={"auto"} width={460} sx={{display: { xs: "none", sm:"block"}}}>
+    <Box  margin={"auto"} width={460} sx={{display: { xs: "none", sm:"block"}}}>
       <Typography sx={{mt: 20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
       <Typography sx={{ fontSize:19, fontFamily:"Albert Sans",}} variant='h3'>Faivovich & Goldberg </Typography>
       <Typography sx={{ fontSize:15, fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>
