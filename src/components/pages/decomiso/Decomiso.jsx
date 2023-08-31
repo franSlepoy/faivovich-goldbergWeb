@@ -48,9 +48,11 @@ creativity, data concealed from history, unthinkable corners of science, or new 
 
   
 </Box>
-<Box sx={{ width: 800, margin:"auto",  overflowY: "clip",display: { xs: "none", sm:"block"}}}>
 
-  <ImageList  variant="masonry" cols={1} gap={25}>
+
+<Box sx={{  width: 800, margin:"auto",  overflowY: "clip",display: { xs: "none", sm:"block"}}}>
+
+  <ImageList   variant="masonry" cols={1} gap={25}>
     {decomisoData.map((item) => (
       <ImageListItem key={item.imagen}>
        
@@ -69,7 +71,7 @@ creativity, data concealed from history, unthinkable corners of science, or new 
   </ImageList>
 </Box>
 
-<Box sx={{mt:10, display: { xs: "block", sm:"none",}}}>
+<Box sx={{ml:2, mr:2,mt:10, display: { xs: "block", sm:"none",}}}>
 <Typography sx={{ fontSize:33, fontFamily: 'Albert Sans', }} variant="h4">DECOMISO</Typography>
   <Typography sx={{ fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">ASU Art Museum. Arizona, USA</Typography>
   <Typography sx={{ mt:4, fontSize:23, fontFamily: 'Albert Sans' }} variant="h6">EXHIBITION</Typography>

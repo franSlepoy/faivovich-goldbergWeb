@@ -72,9 +72,9 @@ const Home = () => {
                     ))}
                 </ImageList>
             </Box>
-            <Box sx ={{mt:8,  display: { xs: "block", sm:"none"}}}>
+            <Box sx ={{mt:12,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
-                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', textDecoration:"none", display:"block"}} key={proyecto.id} mt={3} >{proyecto.titulo}</Typography>
+                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={2}  >{proyecto.titulo}</Typography>
                 ))}
             </Box>
         </>

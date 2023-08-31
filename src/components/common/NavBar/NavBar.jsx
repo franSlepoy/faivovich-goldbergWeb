@@ -47,7 +47,7 @@ const NavBar = () => {
                     </Typography>
                     </Hidden>
                     <Hidden smUp>
-                    <Typography  color="black" sx={{ fontFamily:'Albert Sans' }}>
+                    <Typography  color="black" sx={{ fontFamily:'Albert Sans',  ml:1,mt:-3 , backgroundColor:"#EFEFEF" }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
@@ -66,7 +66,7 @@ const NavBar = () => {
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, mt:-1 }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
+                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, mt:-2, mr:-3 }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
                 
                 </Toolbar>
             </AppBar>
