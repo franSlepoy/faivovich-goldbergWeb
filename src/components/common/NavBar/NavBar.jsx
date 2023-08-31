@@ -1,17 +1,32 @@
 import { AppBar, Button,  Toolbar, Typography, Hidden, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const NavBar = () => {
     const [isIndexHovered, setIsIndexHovered] = useState(false);
     const [isBioHovered, setIsBioHovered] = useState(false);
     const [isBiblioHovered, setIsBiblioHovered] = useState(false);
     const [isContactHovered, setIsContactHovered] = useState(false);
+
+    const [scrollPosition, setScrollPosition] = useState(0);
+    const [isTitleVisible, setIsTitleVisible] = useState(true);
+    useEffect(() => {
+        const handleScroll = () => {
+            const currentPosition = window.scrollY;
+            setIsTitleVisible(currentPosition <= scrollPosition); // Desplazándose hacia arriba
+            setScrollPosition(currentPosition);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, [scrollPosition]);
     
    return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, padding:1, ml:1, mt:0, boxShadow: 0, bgcolor:"transparent"  }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, padding:1,  boxShadow: 0, bgcolor:"transparent"  }}>
                 <Toolbar sx={{ justifyContent: "space-between", width:"100%", padding:0 }}>
                     
                     <Hidden smDown>
@@ -27,7 +42,7 @@ const NavBar = () => {
                         </Typography>
                      </Hidden>
                     <Hidden smDown>
-                    <Typography  color="black" sx={{ ml:-3,  fontFamily:'Albert Sans' }}>
+                    <Typography  color="black"sx={{ ml: 6, fontFamily: 'Albert Sans', opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
@@ -40,14 +55,14 @@ const NavBar = () => {
                     
                     <Hidden smDown>
                         <Typography component={NavLink} 
-                        to={"/biography"} 
+                        to={"/impressum"} 
                         onMouseEnter={() => setIsBioHovered(true)}
                         onMouseLeave={() => setIsBioHovered(false)}
                         color="black" 
                         sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isBioHovered ? 'underline' : 'none',
                         }}>
-                            BIO
+                          IMPRESSUM
                         </Typography>
                     </Hidden>
                     
@@ -64,7 +79,7 @@ const NavBar = () => {
                         onMouseLeave={() => setIsBiblioHovered(false)}
                         sx={{ fontFamily:'Albert Sans',
                         textDecoration: isBiblioHovered? "underline" : "none" }}>
-                        BIBLIO
+                        BIBLIOGRAPHY
                         </Typography>
                     </Hidden>
                     
@@ -75,7 +90,7 @@ const NavBar = () => {
                         sx={{ cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isContactHovered? "underline" : "none",
                         }}>
-                         CONTACT
+                         ES/EN
                         </Typography>
                     </Hidden>
                     

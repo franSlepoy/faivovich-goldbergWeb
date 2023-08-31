@@ -46,6 +46,7 @@ Donec tincidunt, sem sed pretium convallis, neque ipsum fringilla justo, eget te
           loading="lazy"
           
         />
+        <Typography fontSize={"15px"} mt={1} mb={5} textAlign={"center"}>{item.titulo}</Typography>
         
       </ImageListItem>
     ))}

@@ -1,8 +1,8 @@
 export const IndexData = [
     {id: 1,
-     imagen: "/src/imagenes/index/planetario.jpg",
+     imagen: "/src/imagenes/index/mataco.png",
      titulo: "Encuentro con el mataco",
-     link:"/elTaco"
+     link:"/encuentroConElMataco"
     
     },
     {id: 2,
@@ -36,7 +36,7 @@ export const IndexData = [
         link:"/eltaco"
     },
     {id: 8,
-        imagen: "/src/imagenes/index/planetario.jpg", 
+        imagen: "/src/imagenes/index/mataco.png", 
         titulo: "The weight of uncertainty",
         link:"/numero"
     },

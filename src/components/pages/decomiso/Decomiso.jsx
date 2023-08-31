@@ -62,6 +62,7 @@ creativity, data concealed from history, unthinkable corners of science, or new 
           loading="lazy"
           
         />
+        <Typography fontSize={"15px"} mt={1} mb={5} textAlign={"center"}>{item.titulo}</Typography>
         
       </ImageListItem>
     ))}

@@ -3,13 +3,13 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Typography } from '@mui/material';
-import { NumeroData } from '../../../servidor/NumeroData';
+import { EncuentroConElMatacoData } from '../../../servidor/EncuentroConElMataco';
 
-export default function Numero() {
+export default function EncuentroConElMataco() {
   return (
     <>
 <Box mt={20} mb={5}>
-  <Typography sx={{textAlign:"center", fontSize:33, fontFamily: 'Albert Sans', }} variant="h4">NÚMERO</Typography>
+  <Typography sx={{textAlign:"center", fontSize:33, fontFamily: 'Albert Sans', }} variant="h4">Encuentro con el Mataco</Typography>
   <Typography sx={{ textAlign:"center",  fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">(2014 - ongoing)</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:23, fontFamily: 'Albert Sans' }} variant="h6">SERIES</Typography>
   <Typography sx={{ width:314, textAlign:"center", margin:"auto",  fontSize:13, fontFamily: 'Albert Sans' }} variant="subtitle2">
@@ -31,11 +31,11 @@ abstract cosmic landscapes that glow with the potentiality of new matter. The ar
 <Box sx={{ width: 800, margin:"auto",  overflowY: "clip" }}>
 
   <ImageList  variant="masonry" cols={1} gap={25}>
-    {NumeroData.map((item) => (
+    {EncuentroConElMatacoData.map((item) => (
       <ImageListItem key={item.imagen}>
        
         <img
-
+        
           src={`${item.imagen}?w=248&fit=crop&auto=format`}
           srcSet={`${item.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
           alt={item.titulo}
