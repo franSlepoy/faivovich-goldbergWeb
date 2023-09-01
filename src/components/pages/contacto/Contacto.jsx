@@ -57,7 +57,7 @@ const Contacto = () => {
      </Box>
 
      <Box  sx={{display: { xs: "block", sm:"none"} }}>
-       <Typography sx={{mt: 26,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
+       <Typography sx={{mt: 26,mb:8, fontSize:33, fontFamily:"Albert Sans",}} variant='h4'>CONTACTO</Typography>
        <Typography sx={{ textAlign:"center",mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>mail@faivovichgoldberg.com </Typography>
        <Link to={"https://www.barro.cc/es"} target={"_blank"}>
        <Typography  sx={{ textAlign:"center",mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>BARRO ARTE CONTEMPORANEO </Typography>
@@ -68,12 +68,15 @@ const Contacto = () => {
     </Hidden>
 
     <Hidden smUp>
-    <Typography sx={{mt: 12, fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
+      <Box ml={2}>
+      <Typography sx={{mt: 12, fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>CONTACTO</Typography>
        <Typography sx={{ mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>mail@faivovichgoldberg.com </Typography>
        <Link to={"https://www.barro.cc/es"} target={"_blank"}>
        <Typography  sx={{ mt:3, fontSize:18, fontFamily:"Albert Sans",}} variant='h5'>BARRO ARTE CONTEMPORANEO </Typography>
        </Link>
        <Typography sx={{fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>BUENOS AIRES, ARG +54 11 4978 3759</Typography>
+      </Box>
+    
     </Hidden>
     
      </>

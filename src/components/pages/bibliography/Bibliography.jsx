@@ -5,7 +5,7 @@ const Bibliography = () => {
     
   return (
     <>
-    <Box margin={"auto"} width={600} sx={{display: { xs: "none", sm:"block"}}} >
+     <Box margin={"auto"} width={600} sx={{display: { xs: "none", sm:"block"}}} >
       <Typography sx={{mt:20,mb:8,textAlign:"center", fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHY</Typography>
       <Typography sx={{ mt:3, fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>BÖHTLINGK, F. (2017, junio). Dos manos y un gorro frigio. Jennifer Revista de Arte y Actualidad.  </Typography>
       <Typography sx={{ mt:3,fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>CHRISTOV-BAGARKIEV, C. (2012). “The dance was very frenetic, lively, rattling, clanging, rolling, contorted, and lasted for a long time.” dOCUMENTA (13), The Books of Books (Vol. 1/3, p. 30).</Typography>
@@ -43,8 +43,9 @@ const Bibliography = () => {
       
       <Typography sx={{ mb: 15, mt:3,fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo Rosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>
   </Box>
+    
   
-   <Box sx={{width:"90%", mt:10,display:{ xs: "block", sm:"none"}}}>
+   <Box sx={{ margin:2, mt:10,display:{ xs: "block", sm:"none"}}}>
    <Typography sx={{mb:5, fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHY</Typography>
       <Typography sx={{ mt:3, fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo Rosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>
       <Typography sx={{ mt:3,fontSize:13, fontFamily:"Albert Sans",}} variant='h5'>2018-2019 Investigadores residentes. Museo WECKHEWC hohwfowhf hwRosa Galisteo de Rodríguez, Santa Fe, Argentina </Typography>

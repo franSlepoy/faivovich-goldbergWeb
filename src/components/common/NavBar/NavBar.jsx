@@ -31,7 +31,7 @@ const NavBar = () => {
                     
                     <Hidden smDown>
                         <Typography component={NavLink} 
-                                    to={"/index"} 
+                                    to={"/"} 
                                     onMouseEnter={() => setIsIndexHovered(true)}
                                     onMouseLeave={() => setIsIndexHovered(false)} 
                                     sx={{ 

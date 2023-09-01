@@ -121,7 +121,7 @@ const Impressum = () => {
     </Hidden>
     
     
-    <Box sx ={{mt:12, display: { xs: "block", sm:"none"} }}>
+    <Box sx ={{ml:2,mt:12, display: { xs: "block", sm:"none"} }}>
      <Typography sx={{fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
       <Typography sx={{mt:5, fontSize:19, fontFamily:"Albert Sans",}} variant='h3'>Faivovich & Goldberg </Typography>
       <Typography sx={{ fontSize:15, fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>

@@ -6,11 +6,11 @@ import { NavLink } from 'react-router-dom'
 const MenuMobile = () => {
   return (
     <>
-    <Box mt={8} sx={{display:"flex", flexDirection:"column"}}>
-      <Typography sx={{fontFamily:'Albert Sans', textDecoration:"none"}} component={NavLink} to={"/index"}>
+    <Box mt={8} ml={2} sx={{display:"flex", flexDirection:"column"}}>
+      <Typography sx={{fontFamily:'Albert Sans', textDecoration:"none"}} component={NavLink} to={"/"}>
         INDEX
       </Typography>
-      <Typography sx={{fontFamily:'Albert Sans', mt: 2, textDecoration:"none"}} component={NavLink} to={"/biography"}>
+      <Typography sx={{fontFamily:'Albert Sans', mt: 2, textDecoration:"none"}} component={NavLink} to={"/impressum"}>
         BIOGRAPHY
       </Typography>
       <Typography sx={{fontFamily:'Albert Sans', mt:2, textDecoration:"none"}} component={NavLink} to={"/bibliography"}>

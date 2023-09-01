@@ -21,7 +21,7 @@ function App() {
     <BrowserRouter>
     <NavBar/>
      <Routes>
-       <Route path='/index' element={<Home/>}/>
+       <Route path='/' element={<Home/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>
        <Route path='/impressum' element={<Impressum/>}/>
