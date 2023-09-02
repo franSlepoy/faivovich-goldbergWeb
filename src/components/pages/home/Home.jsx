@@ -52,6 +52,7 @@ const Home = () => {
                             </Typography>
                             {hoveredIndex === index && (
                                 <img
+                                
                                 src={`${seccion.imagen}?w=248&fit=crop&auto=format`}
                                 srcSet={`${seccion.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                 alt={seccion.titulo}
