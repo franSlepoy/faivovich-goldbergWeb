@@ -26,7 +26,7 @@ const NavBar = () => {
     
    return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, padding:1,  boxShadow: 0, bgcolor:"transparent"  }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, boxShadow: 0, bgcolor:"transparent"  }}>
                 <Toolbar sx={{ justifyContent: "space-between", width:"100%", padding:0 }}>
                     
                     <Hidden smDown>
@@ -35,19 +35,19 @@ const NavBar = () => {
                                     onMouseEnter={() => setIsIndexHovered(true)}
                                     onMouseLeave={() => setIsIndexHovered(false)} 
                                     sx={{ 
-                                        mt: 0, ml: 0, fontFamily:'Albert Sans',
+                                        mt: "11px", ml:"11px", fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                                         textDecoration: isIndexHovered ? 'underline' : 'none',
                                         }}>
                             INDEX
                         </Typography>
                      </Hidden>
                     <Hidden smDown>
-                    <Typography  color="black"sx={{ ml: 6, fontFamily: 'Albert Sans', opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
+                    <Typography  color="black"sx={{ mt:"11px",ml: 6, fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
                     <Hidden smUp>
-                    <Typography  color="black" sx={{ fontFamily:'Albert Sans',  ml:1,mt:-3 , backgroundColor:"#EFEFEF" }}>
+                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",  ml:2,mt:-3 , backgroundColor:"#EFEFEF" }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
@@ -59,7 +59,7 @@ const NavBar = () => {
                         onMouseEnter={() => setIsBioHovered(true)}
                         onMouseLeave={() => setIsBioHovered(false)}
                         color="black" 
-                        sx={{ mt: -2, cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        sx={{ mt:"11px",mr:"11px",  fontSize:"19px", fontWeight:"600", lineHeight:"normal", cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isBioHovered ? 'underline' : 'none',
                         }}>
                           IMPRESSUM
@@ -77,7 +77,7 @@ const NavBar = () => {
                         <Typography component={NavLink} to={"/bibliography"} 
                         onMouseEnter={() => setIsBiblioHovered(true)}
                         onMouseLeave={() => setIsBiblioHovered(false)}
-                        sx={{ fontFamily:'Albert Sans',
+                        sx={{ ml:"11px", mb:"22px", fontSize:"19px", fontWeight:"600", lineHeight:"normal", p:0, fontFamily:'Albert Sans',
                         textDecoration: isBiblioHovered? "underline" : "none" }}>
                         BIBLIOGRAPHY
                         </Typography>
@@ -87,10 +87,10 @@ const NavBar = () => {
                         <Typography  component={NavLink} to={"/contact"}  
                         onMouseEnter={() => setIsContactHovered(true)}
                         onMouseLeave={() => setIsContactHovered(false)}
-                        sx={{ cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        sx={{mr:"11px", mb:"22px",  cursor: 'pointer', padding:0,fontFamily:'Albert Sans',  fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                         textDecoration: isContactHovered? "underline" : "none",
                         }}>
-                         ES/EN
+                         ES / EN
                         </Typography>
                     </Hidden>
                     

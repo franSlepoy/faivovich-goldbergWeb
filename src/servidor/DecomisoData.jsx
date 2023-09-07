@@ -28,7 +28,4 @@ export const decomisoData = [
         imagen: "/imagenes/decomiso/decomiso6.jpg", 
         titulo: "decomiso6"
     },
-    
-    
-    
 ]
