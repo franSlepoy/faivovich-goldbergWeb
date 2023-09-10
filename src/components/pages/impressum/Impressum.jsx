@@ -13,7 +13,7 @@ const Impressum = () => {
       <Box display={"flex"}
       margin={"auto"}
         width={"60%"}
-        ml={"250px"}
+        ml={"290px"}
          >
       <Box sx={{width:"444px"}} >
       <Typography sx={{mt: 20,mb:8, fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans",}} variant='h3'>BIO</Typography>
@@ -96,21 +96,21 @@ const Impressum = () => {
        
      <Typography sx={{mt:8,fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans"}}>Site</Typography>
        <Typography sx={{mt:3, fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",}} variant='h5'>Concepto</Typography>
-       <Link to={"https://www.barro.cc/es"} target={"_blank"}>
+       
        <Typography  sx={{  fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans",}} variant='h5'>Faivovich & Goldberg</Typography>
-       </Link>
+      
        <Typography sx={{ mt:3, fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",}} variant='h5'>Edición de Textos</Typography>
-       <Link to={"https://www.barro.cc/es"} target={"_blank"}>
+       
        <Typography  sx={{ fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans",}} variant='h5'>Alejo Ponce de León</Typography>
-       </Link>
+       
        <Typography sx={{ mt:3,fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",}} variant='h5'>Diseño</Typography>
-       <Link to={"https://www.barro.cc/es"} target={"_blank"}>
+       
        <Typography  sx={{  fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans",}} variant='h5'>Job Salorio</Typography>
-       </Link>
+       
        <Typography sx={{ mt:3, fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",}} variant='h5'>Desarrollo Web</Typography>
-       <Link to={"https://www.barro.cc/es"} target={"_blank"}>
+       
        <Typography  sx={{ fontSize:"19px",fontWeight:"600",lineHeight:"normal", fontFamily:"Albert Sans",}} variant='h5'>Francisco Slepoy</Typography>
-       </Link>
+       
        
       
       </Box>
@@ -125,7 +125,7 @@ const Impressum = () => {
     </Hidden>
     
     
-    <Box sx ={{ml:2,mt:12, display: { xs: "block", sm:"none"} }}>
+    <Box sx ={{ml:0,mt:12, display: { xs: "block", sm:"none"} }}>
      <Typography sx={{fontSize:33, fontFamily:"Albert Sans",}} variant='h3'>BIOGRAPHY</Typography>
       <Typography sx={{mt:5, fontSize:19, fontFamily:"Albert Sans",}} variant='h3'>Faivovich & Goldberg </Typography>
       <Typography sx={{ fontSize:15, fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>

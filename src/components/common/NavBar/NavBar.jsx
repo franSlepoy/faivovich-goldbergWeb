@@ -47,7 +47,7 @@ const NavBar = () => {
                     </Typography>
                     </Hidden>
                     <Hidden smUp>
-                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",  ml:2,mt:-3 , backgroundColor:"#EFEFEF" }}>
+                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",  ml:2,mt:-3 , backgroundColor:"transparent" }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
@@ -87,10 +87,18 @@ const NavBar = () => {
                         <Typography  component={NavLink} to={"/contact"}  
                         onMouseEnter={() => setIsContactHovered(true)}
                         onMouseLeave={() => setIsContactHovered(false)}
+                        sx={{mr:"-1140px", mb:"22px",  cursor: 'pointer', padding:0,fontFamily:'Albert Sans',  fontSize:"19px", fontWeight:"600", lineHeight:"normal",
+                        textDecoration: isContactHovered? "underline" : "none",
+                        }}>
+                         ES    
+                        </Typography>
+                        <Typography  component={NavLink} to={"/contact"}  
+                        onMouseEnter={() => setIsContactHovered(true)}
+                        onMouseLeave={() => setIsContactHovered(false)}
                         sx={{mr:"11px", mb:"22px",  cursor: 'pointer', padding:0,fontFamily:'Albert Sans',  fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                         textDecoration: isContactHovered? "underline" : "none",
                         }}>
-                         ES / EN
+                        EN
                         </Typography>
                     </Hidden>
                     
