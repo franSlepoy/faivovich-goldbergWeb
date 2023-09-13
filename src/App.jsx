@@ -14,13 +14,15 @@ import EncuentroConElMataco from "./components/pages/encuetroConelMataco/Encuent
 
 
 
+
 function App() {
    
 
   return (
     <BrowserRouter>
     <NavBar/>
-     <Routes>
+   
+    <Routes>
        <Route path='/' element={<Home/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>
@@ -31,7 +33,9 @@ function App() {
        <Route path='/elTaco' element={<ElTaco/>}/>
        <Route path='/encuentroConElMataco' element={<EncuentroConElMataco/>}/>
      </Routes>
+    
     </BrowserRouter>
+    
   )
 }
 

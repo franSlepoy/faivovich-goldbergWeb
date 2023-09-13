@@ -18,7 +18,7 @@ const Home = () => {
 
     return (
         <>
-            <Box sx={{  margin:"auto", width: "75%", position: "relative", mb:40, display: { xs: "none", sm:"block"} }}>
+            <Box sx={{ ml:"20%", mr:"20%", width:"60%", height:"80%", mt:"10%",mb:"10%", position: "relative",  display: { xs: "none", sm:"block"} }}>
                 <ImageList sx={{ ml: 0,mt: 18,mb:18,  overflow: 'hidden'   }} variant="standard" cols={4} gap={0}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
@@ -44,7 +44,7 @@ const Home = () => {
                                     fontSize: "19",
                                     width: 180,
                                     fontFamily: 'Albert Sans',
-                                    zIndex:3,
+                                    zIndex:43,
                                     ...(hoveredIndex === index && underlineStyle), // Agrega el estilo si el cursor está sobre el título
                                 }}
                             >
@@ -58,7 +58,7 @@ const Home = () => {
                                 alt={seccion.titulo}
                                 style={{
                                     position: "absolute",
-                                    zIndex:2,      
+                                    zIndex:42,      
                                      
                                     width: "100%",        
                                     height:"100%" ,      
