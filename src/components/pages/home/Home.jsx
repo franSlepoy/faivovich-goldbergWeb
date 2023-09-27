@@ -1,4 +1,4 @@
-import { ImageList, ImageListItem, ImageListItemBar, Typography } from '@mui/material';
+import { Hidden, ImageList, ImageListItem, ImageListItemBar, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -73,11 +73,19 @@ const Home = () => {
                     ))}
                 </ImageList>
             </Box>
-            <Box sx ={{mt:8,  display: { xs: "block", sm:"none"}}}>
+            
+            <Hidden smUp>
+            <Typography sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none",p:1, ml:"9px", mt:"20%"}}>INDEX</Typography>
+            
+            
+            <Box sx ={{mb:5,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
-                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>
+                    
+                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>
                 ))}
             </Box>
+            </Hidden>
+           
         </>
     );
 };

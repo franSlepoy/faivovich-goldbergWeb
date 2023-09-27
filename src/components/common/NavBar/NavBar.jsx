@@ -26,7 +26,7 @@ const NavBar = () => {
     
    return (
         <>
-            <AppBar position="fixed"  sx={{zIndex: 1, boxShadow: 0, bgcolor:"transparent", mt:"%"  }}>
+            <AppBar position="fixed"  sx={{zIndex: 1, boxShadow: 0, bgcolor:"transparent", width:"100%"  }}>
                 <Toolbar sx={{ justifyContent: "space-between", width:"100%", padding:0 }}>
                     
                     <Hidden smDown>
@@ -36,19 +36,19 @@ const NavBar = () => {
                                     onMouseLeave={() => setIsIndexHovered(false)} 
                                     sx={{ 
                                          
-                                         fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",
+                                        width:"8%" ,fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                                         textDecoration: isIndexHovered ? 'underline' : 'none',
                                         }}>
                             INDEX
                         </Typography>
                      </Hidden>
                     <Hidden smDown>
-                    <Typography  color="black"sx={{ml:"4%" , fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
+                    <Typography  color="black"sx={{ fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
                     <Hidden smUp>
-                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",  ml:2,mt:-3 , backgroundColor:"transparent" }}>
+                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"500", lineHeight:"normal",  ml:2, mt:1, width:"380px", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
@@ -67,7 +67,7 @@ const NavBar = () => {
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon />} sx={{ display: { sm: "none", xs: "block" }, mt:-2, mr:-3 }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
+                    <Button startIcon={<MenuIcon  />} sx={{ display: { sm: "none", xs: "block" }, mt:"3%",  width:"1%px",  textAlign:"end" }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
                 
                 </Toolbar>
             </AppBar>

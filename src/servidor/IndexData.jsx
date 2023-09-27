@@ -29,7 +29,7 @@ export const IndexData = [
     },
     {id: 6,
         imagen: "/imagenes/index/decomiso.jpg", 
-        titulo: "The towerof knowledge",
+        titulo: "The tower of knowledge",
         link:"/numero"
     },
     {id: 7,
