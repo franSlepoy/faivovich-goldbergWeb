@@ -12,8 +12,8 @@ export default function Numero() {
 <Box mt={20} mb={5} sx={{width:"60%", ml:"20%", mr:"20%"}} >
   <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
   <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">(Desde 2014)</Typography>
-  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">SERIES</Typography>
-  <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
+  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Series</Typography>
+  <Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
   Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
 
 </Typography>
@@ -71,16 +71,16 @@ Entonces, además de formular la cuestión racional sobre si es posible extraer 
 </Hidden>
   
 <Hidden smUp>
-<Box sx={{ml:2, mr:2,mt:"20%"}}>
+<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
-<Typography sx={{ fontSize:22, fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
+<Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
   <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">(desde 1014)</Typography>
   <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Micrografías</Typography>
-  <Typography sx={{ width:320,   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  <Typography sx={{ width:"90%",   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
   Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
 
 </Typography>
-<Typography sx={{mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
+<Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 La manera más directa de trazar equivalencias entre una obra de arte y un meteorito se da en el campo de la economía material: la escasez constituye un factor crucial a la hora de determinar el precio de un bien, y el carácter irrepetible de la pieza artística se ha utilizado históricamente como parámetro para establecer su valor, al menos hasta antes de que irrumpiera “la época de su reproducibilidad técnica”. De origen celestial -lugar en el que, durante siglos, se ubicó la raíz de las visiones más trascendentes-, los meteoritos también escasean y tampoco podían ser despojados de su aura. Pero tal y como sucedió con las obras de arte, el curso del siglo XX repercutió de manera negativa en la valoración simbólica de las poquísimas rocas espaciales que fueron halladas en nuestro planeta: cuando el ser humano consiguió situar su cuerpo en la Luna, los meteoritos perdieron su atributo principal, aquel que los convertía en los únicos objetos capaces de testimoniar la existencia de una realidad material más allá de la Tierra.
 
 </Typography>

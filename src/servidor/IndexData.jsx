@@ -19,7 +19,7 @@ export const IndexData = [
     },
     {id: 4,
         imagen: "/imagenes/index/numero.jpg", 
-        titulo: "Número",
+        titulo: "Numero",
         link:"/numero"
     },
     {id: 5,

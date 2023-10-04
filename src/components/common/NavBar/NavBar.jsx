@@ -1,4 +1,4 @@
-import { AppBar, Button,  Toolbar, Typography, Hidden, IconButton } from '@mui/material';
+import { AppBar, Button,  Toolbar, Typography, Hidden, IconButton, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
@@ -27,7 +27,7 @@ const NavBar = () => {
    return (
         <>
             <AppBar position="fixed"  sx={{zIndex: 1, boxShadow: 0, bgcolor:"transparent", width:"100%"  }}>
-                <Toolbar sx={{ justifyContent: "space-between", width:"100%", padding:0 }}>
+                <Toolbar sx={{ justifyContent: "space-between",  }}>
                     
                     <Hidden smDown>
                         <Typography component={NavLink} 
@@ -36,21 +36,30 @@ const NavBar = () => {
                                     onMouseLeave={() => setIsIndexHovered(false)} 
                                     sx={{ 
                                          
-                                        width:"8%" ,fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",
+                                        width:"34%", fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                                         textDecoration: isIndexHovered ? 'underline' : 'none',
                                         }}>
                             INDEX
                         </Typography>
                      </Hidden>
+                     
                     <Hidden smDown>
-                    <Typography  color="black"sx={{ fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
+                
+                    <Typography   color="black"sx={{textAlign:"center", fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
                     </Hidden>
+                    
                     <Hidden smUp>
-                    <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"500", lineHeight:"normal",  ml:2, mt:1, width:"380px", opacity: isTitleVisible ? 1 : 0, transition: 'opacity 0.3s' }}>
+                   <Box width={"100%"} display={"flex"} sx={{ pt:1, bgcolor:"#D9D9D9" }}>
+                   <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"500", lineHeight:"normal",  ml:2, mt:1  }}>
                         FAIVOVICH & GOLDBERG
                     </Typography>
+                    <Button startIcon={<MenuIcon  />} sx={{ display: { sm: "none", xs: "block" },  textAlign:"end",  }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple /> 
+                   </Box>
+                    
+                  
+                    
                     </Hidden>
                     
                     
@@ -60,14 +69,14 @@ const NavBar = () => {
                         onMouseEnter={() => setIsBioHovered(true)}
                         onMouseLeave={() => setIsBioHovered(false)}
                         color="black" 
-                        sx={{  fontSize:"19px", fontWeight:"600", lineHeight:"normal", cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
+                        sx={{width:"34%", textAlign:"end",  fontSize:"19px", fontWeight:"600", lineHeight:"normal", cursor: 'pointer', padding:0,fontFamily:'Albert Sans',
                         textDecoration: isBioHovered ? 'underline' : 'none',
                         }}>
                           IMPRESSUM
                         </Typography>
                     </Hidden>
                     
-                    <Button startIcon={<MenuIcon  />} sx={{ display: { sm: "none", xs: "block" }, mt:"3%",  width:"1%px",  textAlign:"end" }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple />
+                    
                 
                 </Toolbar>
             </AppBar>

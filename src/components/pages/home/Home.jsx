@@ -75,10 +75,10 @@ const Home = () => {
             </Box>
             
             <Hidden smUp>
-            <Typography sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none",p:1, ml:"9px", mt:"20%"}}>INDEX</Typography>
+           {/*  <Typography sx={{fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", textDecoration:"none",p:1, ml:"9px", mt:"25%"}}>INDEX</Typography> */}
             
             
-            <Box sx ={{mb:5,  display: { xs: "block", sm:"none"}}}>
+            <Box sx ={{mt:"25%", width:"98%",mb:5,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
                     
                     <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>

@@ -16,16 +16,20 @@ export default function ElTaco() {
 </Typography>
   <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">(2010)</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">EXHIBITION </Typography>
-  <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
+  <Typography sx={{  width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
   Meteorito de hierro IAB (1574 kg)
 
 </Typography>
+<Box mt={2}>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
 Portikus
 </Typography>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
 Frankfurt, Alemania
 </Typography>
+  
+</Box>
+
 
 <Box sx={{display: "flex", justifyContent:"center", mt:12, mb:"-3%"  }}>
   
@@ -40,14 +44,15 @@ Frankfurt, Alemania
    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
    Su investigación evidenció los términos bajo los cuales se disputó el dominio legal sobre El Taco luego de su exhumación, en un asimétrico cortejo institucional entre Argentina, los Estados Unidos y Alemania. De manera progresiva se revelaron nombres y documentos, se inventarió el estatus cambiante bajo el cual el meteorito fue pasando de mano en mano (primero “obsequio”, luego “donación” y, finalmente, “préstamo” al Instituto Smithsoniano) y se repasaron también las discusiones sobre qué metodologías serían las más aptas para estudiarlo. Se supo que la racionalización del objeto se dio en términos de gótico cientificista: en las notas y cartas que intercambiaron los organismos involucrados quedó asentado el anhelo de ejercer sobre aquel cuerpo acciones tales como "cortarlo por la mitad” para producir "especímenes de gran tamaño", “remover una lonja de cada mitad”, “pulirlo y limpiarlo con ácido nítrico”, etc.
    </Typography>
+   <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}> 
+   De ahí en más, la trayectoria de El Taco se expandió y se contrajo alternadamente: atravesó el Atlántico hasta la ciudad alemana de Maguncia para ser rebanado mediante un sistema experimental, regresó partido a América y, en 1967, cinco años después de su descubrimiento en el Chaco Austral, una de las mitades fue repatriada a la Argentina. En Europa y Estados Unidos se produjo una gran cantidad de información técnica sobre el aerolito, mientras que en Buenos Aires su destino fue el de convertirse en una atracción pública y dominical, sin legajos que dieran cuenta de su actualidad ni de su travesía.
+
+    </Typography>
 </Box>
    
    
    <Box width={"100%"}>
-   <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:3}}> 
-   De ahí en más, la trayectoria de El Taco se expandió y se contrajo alternadamente: atravesó el Atlántico hasta la ciudad alemana de Maguncia para ser rebanado mediante un sistema experimental, regresó partido a América y, en 1967, cinco años después de su descubrimiento en el Chaco Austral, una de las mitades fue repatriada a la Argentina. En Europa y Estados Unidos se produjo una gran cantidad de información técnica sobre el aerolito, mientras que en Buenos Aires su destino fue el de convertirse en una atracción pública y dominical, sin legajos que dieran cuenta de su actualidad ni de su travesía.
-
-    </Typography>
+   
     <Typography  sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:3}}> 
     La desproporción de este recorrido histórico encontró su último capítulo -hasta el momento- en 2010. “Meteorit ‘El Taco’” fue el nombre de la exhibición en la que las dos mitades del meteorito se vieron reunidas por primera vez en un movimiento compositivo y, como ya se mencionó, elemental. La teórica Graciela Speranza especula, sin embargo, con que “más que denunciar los abusos solapados del colonialismo, la desidia de las instituciones, las desigualdades entre el Primer y el Tercer Mundo, las ‘componendas’ geopolíticas, [“Meteorit ‘El Taco’”] componía los restos en una obra que invitaba a atender y a reconsiderar sus efectos”. Dicho de otro modo, es el procedimiento de composición sobre los restos materiales de la política lo que avala una politicidad genuina desde el arte: el conceptualismo se vuelve una condición de posibilidad para que lo humano-histórico y lo cósmico-ahistórico puedan ser sondeados como procesos en lugar de quedar reducidos a simples consignas. El espacio que separa a las dos mitades del meteorito es, también, la escisión entre la estética y lo puramente material.
     </Typography>
@@ -69,7 +74,7 @@ Frankfurt, Alemania
       <ImageListItem key={item.imagen}>
        
         <img
-
+          style={{ objectFit: 'cover' }} 
           src={`${item.imagen}?w=248&fit=crop&auto=format`}
           srcSet={`${item.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
           alt={item.titulo}
@@ -85,9 +90,9 @@ Frankfurt, Alemania
 </Hidden>
 
 <Hidden smUp>
-<Box sx={{ml:2, mr:2,mt:"20%", }}>
+<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%" }}>
   <Box mb={3}>
-  <Typography sx={{ fontSize:22, fontFamily: 'Albert Sans', }} variant="h4">Meteorit “El Taco”</Typography>
+  <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">Meteorit “El Taco”</Typography>
   <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">(2010)</Typography>
   <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Exhibición</Typography>
   <Typography sx={{ width:320,   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
