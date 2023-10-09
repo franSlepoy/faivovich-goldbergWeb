@@ -49,7 +49,7 @@ export const IndexData = [
     },
     {id: 10,
         imagen: "/imagenes/index/planetario.jpg", 
-        titulo: "Meteorit, “El Taco”",
+        titulo: "Meteorit “El Taco”",
         link:"/elTaco"
     },
     

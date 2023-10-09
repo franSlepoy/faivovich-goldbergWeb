@@ -11,10 +11,10 @@ export default function Decomiso() {
 <Hidden smDown>
 <Box mt={20} mb={5} sx={{width:"60%", ml:"20%", mr:"20%"}} >
   <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">Decomiso</Typography>
-  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">(2016)</Typography>
+  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">2016</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Exhibición</Typography>
   <Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-  Fotografías, estanterías metálicas, dossiers, video digital, sonido analógico.
+  Fotografías, estanterías metálicas, dossiers, video digital, sonido analógico
 
 </Typography>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
@@ -108,7 +108,7 @@ Los 405 cuerpos registrados en esta obra eran piezas anónimas de Campo del Ciel
 
 <Typography sx={{ width:"90%",   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
 Fotografías, estanterías metálicas, dossiers, video digital, sonido analógico
-(loops de audio y video no sincronizados).
+(loops de audio y video no sincronizados)
 </Typography>
 
 <Typography sx={{mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
@@ -142,6 +142,12 @@ A lo largo de dos días de trabajo, y con la venia de los oficiales, Faivovich &
 El alcance de este trabajo puede medirse entonces en dos universos: como la primera aplicación exitosa de una ley dirigida a proteger patrimonialmente y garantizar la óptima situación archivística de los meteoritos argentinos, y como instalación artística. En su forma original, la exhibición de Decomiso está compuesta por 405 fotografías, copia única y con escala 1:1, de cada uno de los cuerpos incautados por el Estado Provincial, expuestas en estanterías metálicas que evocan un interminable depósito científico, “una bóveda o un laboratorio”. En una sala anexa se proyecta además el registro fílmico del proceso de indexación, y un grabador de cinta abierta reproduce una toma de audio directa de algunos de esos momentos, que incluyen recitales improvisados de folklore santiagueño por parte de las autoridades.
 
 </Typography>
+<Typography sx={{textAlign:"justify",fontSize:"15px",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}> 
+    
+    Los meteoritos tienen una relación particular con el mundo de lo visible: cuando son asteroides, flotando entre las órbitas de Marte y Júpiter, no podemos verlos sino a través de un telescopio; cuando atraviesan la atmósfera en forma de meteoros, se vuelven destellos efímeros que iluminan los cielos durante apenas un instante; luego de impactar en la superficie terrestre, su destino es quedar enterrados por siglos en mausoleos secretos; cuando se los trafica desaparecen de los radares y, cuando son archivados en dependencias estatales, museos y universidades, no se los puede ver sin una clave puntual de invocación.
+Los 405 cuerpos registrados en esta obra eran piezas anónimas de Campo del Cielo que, en su indexación y nombramiento técnico, logran representar a miles de otras rocas espaciales invisibilizadas por acción u omisión humana. Mediante la épica del concepto convertida en ley, Decomiso retrotrae los meteoritos al segundo exacto en el que fueron gobernados por la estabilidad total de lo que puede ser visto.
+
+    </Typography>
 
 </Box>
 

@@ -1,4 +1,4 @@
-import { Hidden, ImageList, ImageListItem, ImageListItemBar, Typography } from '@mui/material';
+import { Hidden, ImageList, ImageListItem, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
@@ -12,23 +12,29 @@ const Home = () => {
     const underlineStyle = {
         textDecoration: 'underline',
     };
-    
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
 
     return (
         <>
-            <Box sx={{ ml:"20%", mr:"20%", width:"60%", height:"80%", mt:"10%",mb:"10%", position: "relative",  display: { xs: "none", sm:"block"} }}>
-                <ImageList sx={{ ml: 0,mt: 18,mb:18,  overflow: 'hidden'   }} variant="standard" cols={4} gap={0}>
+        <Hidden smDown>
+        <Box sx={{ m: "auto", maxWidth: "60%",  }}> {/* Centra y ajusta el ancho máximo */}
+                <ImageList sx={{mt:"20%", overflow: 'hidden' }} variant="standard" cols={4} gap={20}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
                             component={NavLink}
                             to={seccion.link}
                             style={linkStyle}
-                            sx={{ color: "black", mb:5, position: "relative", width:"180px", height:"100px" }}
-                            onMouseEnter={() => setHoveredIndex(index)} // Establecer el índice cuando el cursor entra
-                            onMouseLeave={() => setHoveredIndex(null)} // Restablecer el índice cuando el cursor sale
+                            sx={{
+                               
+                                mb: 5,
+                                position: "relative",
+                                width: "100%", // Usa porcentajes para el ancho
+                                height: "auto", // Ajusta la altura automáticamente
+                            }}
+                            onMouseEnter={() => setHoveredIndex(index)}
+                            onMouseLeave={() => setHoveredIndex(null)}
                             onMouseMove={(e) => {
                                 const boundingRect = e.currentTarget.getBoundingClientRect();
                                 const offsetX = e.clientX - boundingRect.left;
@@ -39,53 +45,54 @@ const Home = () => {
                             <Typography
                                 color="black"
                                 sx={{
-                                    m:5,
+                                    mt:"15%",
                                     textAlign: "center",
-                                    fontSize: "19",
-                                    width: 180,
+                                    fontSize: "1em",
+                                    width: "100%", // Usa porcentajes para el ancho
                                     fontFamily: 'Albert Sans',
-                                    zIndex:43,
-                                    ...(hoveredIndex === index && underlineStyle), // Agrega el estilo si el cursor está sobre el título
+                                    zIndex: 43,
+                                    ...(hoveredIndex === index && underlineStyle),
                                 }}
                             >
                                 {seccion.titulo}
                             </Typography>
                             {hoveredIndex === index && (
                                 <img
-                                
-                                src={`${seccion.imagen}?w=248&fit=crop&auto=format`}
-                                srcSet={`${seccion.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
-                                alt={seccion.titulo}
-                                style={{
-                                    position: "absolute",
-                                    zIndex:42,      
-                                     
-                                    width: "100%",        
-                                    height:"100%" ,      
-                                    objectFit: "contain", 
-                                    objectPosition: "center center", 
-                                    transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
-                                }}
-                            />
+                                    src={`${seccion.imagen}?w=248&fit=crop&auto=format`}
+                                    srcSet={`${seccion.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={seccion.titulo}
+                                    style={{
+                                        position: "absolute",
+                                        zIndex: 42,
+                                       width:"150px",
+                                        height:"150px",
+                                        objectFit: "contain",
+                                        objectPosition: "center center",
+                                        transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
+                                    }}
+                                />
                             )}
-                            <ImageListItemBar sx={{ backgroundColor: "transparent" }} />
+                          
                         </ImageListItem>
                     ))}
                 </ImageList>
             </Box>
+        </Hidden>
             
+
+            <Hidden smUp>
             <Hidden smUp>
            {/*  <Typography sx={{fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", textDecoration:"none",p:1, ml:"9px", mt:"25%"}}>INDEX</Typography> */}
             
             
-            <Box sx ={{mt:"25%", width:"98%",mb:5,  display: { xs: "block", sm:"none"}}}>
+            <Box sx ={{mt:"20%", width:"98%",mb:5,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
                     
                     <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>
                 ))}
             </Box>
             </Hidden>
-           
+            </Hidden>
         </>
     );
 };

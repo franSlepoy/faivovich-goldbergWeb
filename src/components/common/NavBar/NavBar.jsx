@@ -50,17 +50,7 @@ const NavBar = () => {
                     </Typography>
                     </Hidden>
                     
-                    <Hidden smUp>
-                   <Box width={"100%"} display={"flex"} sx={{ pt:1, bgcolor:"#D9D9D9" }}>
-                   <Typography  color="black" sx={{ fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"500", lineHeight:"normal",  ml:2, mt:1  }}>
-                        FAIVOVICH & GOLDBERG
-                    </Typography>
-                    <Button startIcon={<MenuIcon  />} sx={{ display: { sm: "none", xs: "block" },  textAlign:"end",  }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple /> 
-                   </Box>
-                    
-                  
-                    
-                    </Hidden>
+                   
                     
                     
                     <Hidden smDown>
@@ -110,7 +100,19 @@ const NavBar = () => {
                 </Toolbar>
             </AppBar>
 
-            
+            <Hidden smUp>
+                <AppBar position="fixed"  sx={{zIndex: 1, boxShadow: 0, bgcolor:"transparent", width:"100%",   }}>
+                    <Toolbar>
+                    <Box width={"100%"} display={"flex"} sx={{ justifyContent:"space-between",  bgcolor:"#D9D9D9" }}>
+                   <Typography  color="black" sx={{textAlign:"start", fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"500", lineHeight:"normal",   mt:1, }}>
+                        FAIVOVICH & GOLDBERG
+                    </Typography>
+                    <Button startIcon={<MenuIcon  />} sx={{ display: { sm: "none", xs: "block" },  textAlign:"end",  }} color="inherit" component={NavLink} to={"/menuMobile"} disableTouchRipple /> 
+                   </Box>
+                    </Toolbar>
+                </AppBar>
+                  
+            </Hidden>
 
         
         </>

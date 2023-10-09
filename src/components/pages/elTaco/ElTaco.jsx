@@ -14,7 +14,7 @@ export default function ElTaco() {
 <Box mt={"15%"} mb={"5%"} sx={{width:"60%", ml:"20%", mr:"20%"}}>
   <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4"> Meteorit “El Taco”
 </Typography>
-  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">(2010)</Typography>
+  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">2010</Typography>
   <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">EXHIBITION </Typography>
   <Typography sx={{  width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
   Meteorito de hierro IAB (1574 kg)
@@ -93,8 +93,12 @@ Frankfurt, Alemania
 <Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%" }}>
   <Box mb={3}>
   <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">Meteorit “El Taco”</Typography>
-  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">(2010)</Typography>
+  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">2010</Typography>
   <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Exhibición</Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  Meteorito de hierro IAB (1574 kg)
+
+</Typography>
   <Typography sx={{ width:320,   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
   Portikus
   </Typography>

@@ -11,8 +11,8 @@ export default function Numero() {
 <Hidden smDown>
 <Box mt={20} mb={5} sx={{width:"60%", ml:"20%", mr:"20%"}} >
   <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
-  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">(Desde 2014)</Typography>
-  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Series</Typography>
+  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">Desde 2014</Typography>
+  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Serie</Typography>
   <Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
   Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
 
@@ -74,7 +74,7 @@ Entonces, además de formular la cuestión racional sobre si es posible extraer 
 <Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
 <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
-  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">(desde 1014)</Typography>
+  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">desde 2014</Typography>
   <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Micrografías</Typography>
   <Typography sx={{ width:"90%",   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
   Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
