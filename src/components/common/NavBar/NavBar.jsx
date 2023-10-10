@@ -2,6 +2,7 @@ import { AppBar, Button,  Toolbar, Typography, Hidden, IconButton, Box } from '@
 import MenuIcon from '@mui/icons-material/Menu';
 import { NavLink } from 'react-router-dom';
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const NavBar = () => {
     const [isIndexHovered, setIsIndexHovered] = useState(false);
@@ -23,6 +24,8 @@ const NavBar = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, [scrollPosition]);
+
+    const { t, i18n } = useTranslation();
     
    return (
         <>
@@ -85,10 +88,15 @@ const NavBar = () => {
                     
                     <Hidden smDown>
                         
-                        <Typography  component={NavLink} to={"/contact"}  
+                        <Typography  
+                         component="button" // Usamos un botón en lugar de Typography
+                         onClick={() => {
+                           const newLanguage = i18n.language === 'es' ? 'en' : 'es'; // Cambia entre 'es' y 'en'
+                           i18n.changeLanguage(newLanguage); // Cambia el idioma
+                         }}  
                         onMouseEnter={() => setIsContactHovered(true)}
                         onMouseLeave={() => setIsContactHovered(false)}
-                        sx={{  cursor: 'pointer', padding:0,fontFamily:'Albert Sans',  fontSize:"19px", fontWeight:"600", lineHeight:"normal",
+                        sx={{border:"none",bgcolor:"transparent",  cursor: 'pointer', padding:0,fontFamily:'Albert Sans',  fontSize:"19px", fontWeight:"600", lineHeight:"normal",
                         textDecoration: isContactHovered? "underline" : "none",
                         }}>
                         ES / EN

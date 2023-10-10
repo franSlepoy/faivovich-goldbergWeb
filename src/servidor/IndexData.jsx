@@ -2,24 +2,25 @@ import { mataco, numero } from "./ImegenesData";
 
 export const IndexData = [
     {id: 1,
-     imagen: mataco,
-     titulo: "Encuentro con el mataco",
-     link:"/encuentroConElMataco"
+         imagen: "/imagenes/index/decomiso.jpg", 
+         titulo: "Decomiso",
+         link:"/decomiso"
     
     },
     {id: 2,
-        imagen: numero,
-        titulo: "A. 18 / Auf der surche nach mesón",
+        imagen: "/imagenes/index/numero.jpg", 
+        titulo: "Numero",
         link:"/numero"
         },
     {id: 3,
-        imagen: "/imagenes/index/decomiso.jpg", 
-        titulo: "Decomiso",
-        link:"/decomiso"
+        
+     imagen: "/imagenes/index/planetario.jpg", 
+        titulo: "Meteorit “El Taco”",
+        link:"/elTaco"
     },
     {id: 4,
-        imagen: "/imagenes/index/numero.jpg", 
-        titulo: "Numero",
+        imagen: numero,
+        titulo: "A. 18 / Auf der surche nach mesón",
         link:"/numero"
     },
     {id: 5,
@@ -48,9 +49,9 @@ export const IndexData = [
         link:"/decomiso"
     },
     {id: 10,
-        imagen: "/imagenes/index/planetario.jpg", 
-        titulo: "Meteorit “El Taco”",
-        link:"/elTaco"
+     imagen: mataco,
+     titulo: "Encuentro con el mataco",
+     link:"/encuentroConElMataco"
     },
     
     

@@ -1,12 +1,17 @@
-import { Hidden, Typography } from '@mui/material'
+import { Button, Hidden, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
 import { Link, NavLink } from "react-router-dom"
+import { useTranslation } from 'react-i18next';
 
 const Impressum = () => {
   const [isCvHovered, setIsCvHovered] = useState(false);
   const [isMailHovered, setIsMailHovered] = useState(false);
   const [isBarroHovered, setIsBarroHovered] = useState(false);
+  const { t } = useTranslation();
+
+ 
+
   return (
     <>
    <Hidden smDown>
@@ -39,10 +44,10 @@ const Impressum = () => {
         (Buenos Aires, 1977 / Paris, 1978)
       </Typography>
       <Typography sx={{ mt:5,fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",textIndent:42}} variant="subtitle2"> 
-      Durante más de una década, el dúo formado por Guillermo Faivovich y Nicolás Goldberg ha desarrollado un extenso trabajo de investigación sobre Campo del Cielo, región fronteriza entre Chaco y Santiago del Estero sobre la que se precipitó una lluvia de meteoritos hace aproximadamente 4.000 años. El resultado de esta iniciativa en expansión constante es un conjunto de obra que analiza las particularidades de un evento singular e ilumina la dinámica -de variabilidad infinita- entre ciertos objetos cósmicos y su compleja existencia política. A través de la archivística más efusiva, lo forense cultural y la narratología sistémica, Faivovich y Goldberg revisan la carga testimonial contenida en Campo del Cielo y sus bifurcaciones. Su trabajo se asemeja así a una exploración del rol probatorio de la materia como lienzo para la inscripción de eventos, o a un tratado sobre los medios humanos diseñados para leer la historia de aquellas cosas que son ajenas a este mundo pero que se han convertido en una parte de él.
+      {t("bioTexto1")}
       </Typography>
       <Typography sx={{ mb:5,fontSize:"15px", fontWeight:"500", lineHeight:"19px",  fontFamily:"Albert Sans", textIndent:42}} variant="subtitle2"> 
-      Entre sus proyectos recientes se destacan ¡Saxa Loquuntur! (Galería Barro, 2022), Encuentro con El Mataco (Museo Histórico Provincial de Rosario Julio Marc, 2019), Mesón de fierro: Towards the XXII Century (Naciones Unidas, Viena, 2019), En búsqueda del Mesón de Fierro (Naturhistorisches Museum, Viena, 2018) y Decomiso (ASU Art Museum, Arizona, 2018). Han participado en programas de conferencias de la Universidad Di Tella, Buenos Aires (2018), Thyssen-Bornemisza Art Contemporary, Viena (2017), Museo de Arte Latinoamericano de Buenos Aires (2017), Dia Art Foundation, Nueva York (2013) y el Massachusetts Institute of Technology, Cambridge (2011). Viven y trabajan en Buenos Aires.
+      {t("bioTexto2")}
        </Typography>
     </Box>
 
@@ -102,19 +107,22 @@ const Impressum = () => {
 
       {/* Botón "CV" */}
       <Box
-      
-        component={NavLink}
-        to="/index"
-        onMouseEnter={() => setIsCvHovered(true)}
-        onMouseLeave={() => setIsCvHovered(false)}
-        sx={{
-          textDecoration: isCvHovered ? "underline" : "none",
-        }}
-      >
-        <Typography sx={{mt:2, fontSize: "15px", fontWeight: "600", lineHeight: "normal", fontFamily: "Albert Sans" }}>
-          CV
-        </Typography>
-      </Box>
+  component="a" // Usa una etiqueta <a> en lugar de NavLink
+  href="/public/CV2023.pdf" // Reemplaza con la ruta correcta al archivo PDF
+  target="_blank" // Abre en una nueva pestaña
+  download="CV2023.pdf" // Sugerir la descarga
+  onMouseEnter={() => setIsCvHovered(true)}
+  onMouseLeave={() => setIsCvHovered(false)}
+  sx={{
+    textDecoration: isCvHovered ? "underline" : "none",
+  }}
+>
+  <Typography
+    sx={{ mt: 2, fontSize: "15px", fontWeight: "600", lineHeight: "normal", fontFamily: "Albert Sans" }}
+  >
+    CV
+  </Typography>
+</Box>
     </Box>
 
     {/* Sección "SITE" */}
@@ -186,10 +194,10 @@ const Impressum = () => {
       <Typography sx={{ fontSize:"15px" ,fontWeight:"600", lineHeight:"19px", fontFamily:"Albert Sans",}} variant='h3'>Guillermo Faivovich & Nicolás Goldberg </Typography>
       <Typography sx={{ fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans",}} variant="subtitle2">(Buenos Aires, 1977 / Paris, 1978) </Typography>
       <Typography sx={{textAlign:"justify", mt:2,fontSize:"15px", fontWeight:"500", lineHeight:"19px", fontFamily:"Albert Sans"}} variant="subtitle2"> 
-      Durante más de una década, el dúo formado por Guillermo Faivovich y Nicolás Goldberg ha desarrollado un extenso trabajo de investigación sobre Campo del Cielo, región fronteriza entre Chaco y Santiago del Estero sobre la que se precipitó una lluvia de meteoritos hace aproximadamente 4.000 años. El resultado de esta iniciativa en expansión constante es un conjunto de obra que analiza las particularidades de un evento singular e ilumina la dinámica -de variabilidad infinita- entre ciertos objetos cósmicos y su compleja existencia política. A través de la archivística más efusiva, lo forense cultural y la narratología sistémica, Faivovich y Goldberg revisan la carga testimonial contenida en Campo del Cielo y sus bifurcaciones. Su trabajo se asemeja así a una exploración del rol probatorio de la materia como lienzo para la inscripción de eventos, o a un tratado sobre los medios humanos diseñados para leer la historia de aquellas cosas que son ajenas a este mundo pero que se han convertido en una parte de él.
+      {t("bioTexto1")}
       </Typography>
       <Typography sx={{textAlign:"justify", mb:5,fontSize:"15px", fontWeight:"500", lineHeight:"19px",  fontFamily:"Albert Sans", textIndent:42}} variant="subtitle2"> 
-      Entre sus proyectos recientes se destacan ¡Saxa Loquuntur! (Galería Barro, 2022), Encuentro con El Mataco (Museo Histórico Provincial de Rosario Julio Marc, 2019), Mesón de fierro: Towards the XXII Century (Naciones Unidas, Viena, 2019), En búsqueda del Mesón de Fierro (Naturhistorisches Museum, Viena, 2018) y Decomiso (ASU Art Museum, Arizona, 2018). Han participado en programas de conferencias de la Universidad Di Tella, Buenos Aires (2018), Thyssen-Bornemisza Art Contemporary, Viena (2017), Museo de Arte Latinoamericano de Buenos Aires (2017), Dia Art Foundation, Nueva York (2013) y el Massachusetts Institute of Technology, Cambridge (2011). Viven y trabajan en Buenos Aires.
+      {t("bioTexto1")}
        </Typography>
       </Box>
 

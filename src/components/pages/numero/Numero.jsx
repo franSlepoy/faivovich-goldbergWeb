@@ -4,8 +4,12 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { Hidden, Typography } from '@mui/material';
 import { NumeroData } from '../../../servidor/NumeroData';
+import { useTranslation } from 'react-i18next';
+
 
 export default function Numero() {
+  const { t } = useTranslation();
+
   return (
     <>
 <Hidden smDown>
@@ -21,23 +25,22 @@ export default function Numero() {
 <Box sx={{display: "flex", justifyContent:"center", mt:12  }}>
    <Box width={"50%"}>
    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
-   La manera más directa de trazar equivalencias entre una obra de arte y un meteorito se da en el campo de la economía material: la escasez constituye un factor crucial a la hora de determinar el precio de un bien, y el carácter irrepetible de la pieza artística se ha utilizado históricamente como parámetro para establecer su valor, al menos hasta antes de que irrumpiera “la época de su reproducibilidad técnica”. De origen celestial -lugar en el que, durante siglos, se ubicó la raíz de las visiones más trascendentes-, los meteoritos también escasean y tampoco podían ser despojados de su aura. Pero tal y como sucedió con las obras de arte, el curso del siglo XX repercutió de manera negativa en la valoración simbólica de las poquísimas rocas espaciales que fueron halladas en nuestro planeta: cuando el ser humano consiguió situar su cuerpo en la Luna, los meteoritos perdieron su atributo principal, aquel que los convertía en los únicos objetos capaces de testimoniar la existencia de una realidad material más allá de la Tierra.
+   {t("numeroTexto1")}
 
 </Typography>
 <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
-Número es una serie en curso que navega las lógicas contradictorias de lo múltiple contenido en lo único y de lo vasto incluido en lo ínfimo. Una sucesión de primeros planos microfotográficos efectuados sobre muestras meteoríticas permite leer las líneas de variedad interminable que conforman un cuerpo, en apariencia, singular. En cada una de las imágenes, la lente revela un conjunto particular de silicatos misteriosos y otros destellos de policromatismo minúsculo, ingredientes moleculares de las etapas más tempranas del Sistema Solar.
+{t("numeroTexto2")}
 
     </Typography>
    </Box>
    
    <Box width={"50%"}>
    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:2}}> 
-   Así, como serie compuesta de diferencias que surgen del mismo fundamento, numero se vuelve el resultado de una analítica al servicio de desmontar la noción de unicidad del cuerpo y observa poéticamente el concepto económico de escasez. A partir de los efectos multiplicadores de la repetición, se pregunta si es posible reescribir el sentido universal para explorar la singularidad de una potencial vida interior, que es infinitesimal y chispea bajo la uniformidad gris de lo general.
+   {t("numeroTexto3")}
 
     </Typography>
     <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:2}}> 
-    La decisión de presentar las imágenes evocando la forma circular de la lente microscópica enfatiza su cariz científico, ya que la obra es, al mismo tiempo, continuidad y homenaje a una tradición de microfotografía “maravillosa” que existe desde el siglo XIX. Los avances tecnológicos producen estética como una digresión del idioma de las herramientas, que suele ser considerado hermético en su utilitarismo pero que pareciera ser la única lengua capaz de revelar la belleza morfemática que organiza las cosas desde adentro.
-Entonces, además de formular la cuestión racional sobre si es posible extraer una sucesión sin límite de aquello que se estima único, el asunto sensible en torno a este trabajo tiene que ver con la aplicación experimental de diversos lenguajes superpuestos con el fin de precisar si la realidad puede ser reflejo del misterio.
+    {t("numeroTexto4")}
 
     </Typography>
    </Box>
@@ -81,24 +84,21 @@ Entonces, además de formular la cuestión racional sobre si es posible extraer 
 
 </Typography>
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
-La manera más directa de trazar equivalencias entre una obra de arte y un meteorito se da en el campo de la economía material: la escasez constituye un factor crucial a la hora de determinar el precio de un bien, y el carácter irrepetible de la pieza artística se ha utilizado históricamente como parámetro para establecer su valor, al menos hasta antes de que irrumpiera “la época de su reproducibilidad técnica”. De origen celestial -lugar en el que, durante siglos, se ubicó la raíz de las visiones más trascendentes-, los meteoritos también escasean y tampoco podían ser despojados de su aura. Pero tal y como sucedió con las obras de arte, el curso del siglo XX repercutió de manera negativa en la valoración simbólica de las poquísimas rocas espaciales que fueron halladas en nuestro planeta: cuando el ser humano consiguió situar su cuerpo en la Luna, los meteoritos perdieron su atributo principal, aquel que los convertía en los únicos objetos capaces de testimoniar la existencia de una realidad material más allá de la Tierra.
+{t("numeroTexto1")}
+
+</Typography>
+
+<Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
+{t("numeroTexto2")}
 
 </Typography>
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-
-</Typography>
-<Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-Número es una serie en curso que navega las lógicas contradictorias de lo múltiple contenido en lo único y de lo vasto incluido en lo ínfimo. Una sucesión de primeros planos microfotográficos efectuados sobre muestras meteoríticas permite leer las líneas de variedad interminable que conforman un cuerpo, en apariencia, singular. En cada una de las imágenes, la lente revela un conjunto particular de silicatos misteriosos y otros destellos de policromatismo minúsculo, ingredientes moleculares de las etapas más tempranas del Sistema Solar.
-
-</Typography>
-<Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-Así, como serie compuesta de diferencias que surgen del mismo fundamento, numero se vuelve el resultado de una analítica al servicio de desmontar la noción de unicidad del cuerpo y observa poéticamente el concepto económico de escasez. A partir de los efectos multiplicadores de la repetición, se pregunta si es posible reescribir el sentido universal para explorar la singularidad de una potencial vida interior, que es infinitesimal y chispea bajo la uniformidad gris de lo general.
+{t("numeroTexto3")}
 
 
 </Typography>
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-La decisión de presentar las imágenes evocando la forma circular de la lente microscópica enfatiza su cariz científico, ya que la obra es, al mismo tiempo, continuidad y homenaje a una tradición de microfotografía “maravillosa” que existe desde el siglo XIX. Los avances tecnológicos producen estética como una digresión del idioma de las herramientas, que suele ser considerado hermético en su utilitarismo pero que pareciera ser la única lengua capaz de revelar la belleza morfemática que organiza las cosas desde adentro.
-Entonces, además de formular la cuestión racional sobre si es posible extraer una sucesión sin límite de aquello que se estima único, el asunto sensible en torno a este trabajo tiene que ver con la aplicación experimental de diversos lenguajes superpuestos con el fin de precisar si la realidad puede ser reflejo del misterio.
+{t("numeroTexto4")}
 
 </Typography>
 </Box>
