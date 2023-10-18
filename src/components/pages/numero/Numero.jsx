@@ -14,11 +14,15 @@ export default function Numero() {
     <>
 <Hidden smDown>
 <Box mt={20} mb={5} sx={{width:"60%", ml:"20%", mr:"20%"}} >
-  <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
-  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">Desde 2014</Typography>
-  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Serie</Typography>
+  <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">{t("numeroTitulo1")}</Typography>
+  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">{t("numeroTitulo2")}</Typography>
+  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">{t("numeroTitulo3")}</Typography>
   <Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-  Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
+  {t("numeroTitulo4")}
+
+</Typography>
+<Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo5")}
 
 </Typography>
 

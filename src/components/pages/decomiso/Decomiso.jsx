@@ -14,23 +14,22 @@ export default function Decomiso() {
 <>
 <Hidden smDown>
 <Box mt={20} mb={5} sx={{width:"60%", ml:"20%", mr:"20%"}} >
-  <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">Decomiso</Typography>
-  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">2016</Typography>
-  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">Exhibición</Typography>
+  <Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">{t("decomisoTitulo1")}</Typography>
+  <Typography sx={{ textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">{t("decomisoTitulo2")}</Typography>
+  <Typography sx={{ mt:4, textAlign:"center",  fontSize:"19px", fontFamily: 'Albert Sans' }} variant="h6">{t("decomisoTitulo3")}</Typography>
   <Typography sx={{ width:300, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-  Fotografías, estanterías metálicas, dossiers, video digital, sonido analógico
-
+  {t("decomisoTitulo4")}
 </Typography>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-(loops de audio y video no sincronizados)
+{t("decomisoTitulo5")}
 </Typography>
 
 <Box mt={2}>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-ASU Art Museum
+{t("decomisoTitulo6")}
 </Typography>
 <Typography sx={{ width:314, textAlign:"center", margin:"auto", fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }} variant="subtitle2">
-Arizona, EEUU (2018)
+{t("decomisoTitulo7")}
 </Typography>
 </Box>
 
@@ -104,22 +103,22 @@ Arizona, EEUU (2018)
 <Hidden smUp>
 <Box sx={{ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
-<Typography sx={{ fontSize:19,fontWeight:"600",  fontFamily: 'Albert Sans', }} variant="h4">Decomiso</Typography>
-  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">(2016)</Typography>
-  <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Exhibición</Typography>
+<Typography sx={{ fontSize:19,fontWeight:"600",  fontFamily: 'Albert Sans', }} variant="h4">{t("decomisoTitulo1")}</Typography>
+  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("decomisoTitulo2")}</Typography>
+  <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">{t("decomisoTitulo3")}</Typography>
   
 
 <Typography sx={{ width:"90%",   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
-Fotografías, estanterías metálicas, dossiers, video digital, sonido analógico
-(loops de audio y video no sincronizados)
+{t("decomisoTitulo4")}
+{t("decomisoTitulo5")}
 </Typography>
 
 <Typography sx={{mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
-ASU Art Museum
+{t("decomisoTitulo6")}
 
 </Typography>
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-Arizona, EEUU (2018)
+{t("decomisoTitulo7")}
 
 </Typography>
 <Typography sx={{textAlign:"justify",mt:3,fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>

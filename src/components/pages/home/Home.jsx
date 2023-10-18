@@ -64,8 +64,8 @@ const Home = () => {
                                     style={{
                                         position: "absolute",
                                         zIndex: 42,
-                                       width:"150px",
-                                        height:"150px",
+                                       width:"80px",
+                                        height:"80px",
                                         objectFit: "contain",
                                         objectPosition: "center center",
                                         transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
