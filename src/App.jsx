@@ -10,6 +10,7 @@ import Home from "./components/pages/home/Home"
 import Numero from "./components/pages/numero/Numero"
 import Impressum from "./components/pages/impressum/Impressum"
 import EncuentroConElMataco from "./components/pages/encuetroConelMataco/EncuentroConElMataco"
+import Cuatrocientos4 from "./components/pages/404/Cuatrocientos4"
 
 
 
@@ -23,6 +24,7 @@ function App() {
     <NavBar/>
    
     <Routes>
+       <Route path='/nanaicalo' element={<Cuatrocientos4/>}/>
        <Route path='/' element={<Home/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>
