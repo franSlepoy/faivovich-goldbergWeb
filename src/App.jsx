@@ -24,7 +24,7 @@ function App() {
     <NavBar/>
    
     <Routes>
-       <Route path='/nanaicalo' element={<Cuatrocientos4/>}/>
+
        <Route path='/' element={<Home/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>

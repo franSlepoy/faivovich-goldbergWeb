@@ -68,7 +68,8 @@ const Home = () => {
                                         height:"80px",
                                         objectFit: "contain",
                                         objectPosition: "center center",
-                                        transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`,
+                                       /*  transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`, */
+                                        transform: `translate(${cursorPosition.x - 60}px, ${cursorPosition.y + 40}px)`,
                                     }}
                                 />
                             )}
