@@ -62,14 +62,14 @@ const Home = () => {
                                     srcSet={`${seccion.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     alt={seccion.titulo}
                                     style={{
-                                        position: "absolute",
-                                        zIndex: 42,
+                                        position: "fixed",
+                                        zIndex: 100,
                                        width:"80px",
                                         height:"80px",
                                         objectFit: "contain",
                                         objectPosition: "center center",
                                        /*  transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`, */
-                                        transform: `translate(${cursorPosition.x - 60}px, ${cursorPosition.y + 40}px)`,
+                                        transform: `translate(${cursorPosition.x - 29}px, ${cursorPosition.y + 40}px)`,
                                     }}
                                 />
                             )}
