@@ -12,6 +12,8 @@ import Impressum from "./components/pages/impressum/Impressum"
 import EncuentroConElMataco from "./components/pages/encuetroConelMataco/EncuentroConElMataco"
 import Cuatrocientos4 from "./components/pages/404/Cuatrocientos4"
 import EnConstruccion from "./components/pages/enConstruccion/EnConstruccion"
+import NavBar1 from "./components/common/NavBar/NavBar1"
+import Publicaciones from "./components/pages/publicaciones/Publicaciones"
 
 
 function App() {
@@ -19,12 +21,13 @@ function App() {
 
   return (
     <BrowserRouter>
-    <NavBar/>
+    <NavBar1/>
    
     <Routes>
        
        <Route path='/' element={<EnConstruccion/>}/>
        <Route path='/test' element={<Home/>}/>
+       <Route path='/publications' element={<Publicaciones/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>
        <Route path='/impressum' element={<Impressum/>}/>
