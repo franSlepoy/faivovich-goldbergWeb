@@ -1,9 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import ImageList from '@mui/material/ImageList';
-import ImageListItem from '@mui/material/ImageListItem';
 import {  Hidden, Typography } from '@mui/material';
-import { NumeroData } from '../../../servidor/NumeroData';
 import { useTranslation } from 'react-i18next';
 
 
@@ -181,13 +178,37 @@ export default function Numero() {
 <Hidden smUp>
 <Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
-<Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">Numero</Typography>
-  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">desde 2014</Typography>
-  <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">Micrografías</Typography>
-  <Typography sx={{ width:"90%",   fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
-  Tinta pigmentada sobre papel de algodón, copias únicas (104x104 cm)
+<Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("numeroTitulo1")}</Typography>
+  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("numeroTitulo2")}</Typography>
+  <Typography sx={{width:"90%",  mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">{t("numeroTitulo3")}</Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo4")}
+  </Typography>
+  <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">{t("numeroTitulo5")}</Typography>
+  
+  <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo6")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo7")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo8")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo9")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo10")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo11")}
+  </Typography>
+  <Typography sx={{  fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("numeroTitulo12")}
+  </Typography>
 
-</Typography>
+
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 {t("numeroTexto1")}
 
@@ -208,24 +229,61 @@ export default function Numero() {
 </Typography>
 </Box>
 
+<Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio1.png" alt="" />
+</Box>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio2.png" alt="" />
+</Box>
+
+<Box display={"flex"} textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-1.png" alt="" />  
+<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-2.png" alt="" />
+</Box>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio4.png" alt="" />
+</Box>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio5.png" alt="" />
+</Box>
+
+<Box display={"flex"} textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-1.png" alt="" />  
+<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-2.png" alt="" />
+</Box>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio7.png" alt="" />
+</Box>
+
+<Box textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio8.png" alt="" />
+</Box>
+
+<Box display={"flex"} textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-1.png" alt="" />  
+<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-2.png" alt="" />
+</Box>
+
+<Box display={"flex"} textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-1.png" alt="" />  
+<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-2.png" alt="" />
+</Box>
+
+<Box mb={"290px"}  textAlign={"center"}>
+<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio11.png" alt="" />
+</Box>
 
 
-<ImageList variant="masonry" cols={1} gap={25}>
-    {NumeroData.map((item) => (
-      <ImageListItem key={item.imagen}>
-       
-        <img
 
-          src={`${item.imagen}?w=248&fit=crop&auto=format`}
-          srcSet={`${item.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
-          alt={item.titulo}
-          loading="lazy"
-          
-        />
-        
-      </ImageListItem>
-    ))}
-  </ImageList>
+</Box>
+
+
 </Box>
 </Hidden>
 </>

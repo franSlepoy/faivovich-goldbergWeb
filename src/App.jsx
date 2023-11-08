@@ -14,6 +14,16 @@ import Cuatrocientos4 from "./components/pages/404/Cuatrocientos4"
 import EnConstruccion from "./components/pages/enConstruccion/EnConstruccion"
 import NavBar1 from "./components/common/NavBar/NavBar1"
 import Publicaciones from "./components/pages/publicaciones/Publicaciones"
+import MesonDeFierro from "./components/pages/mesonDeFierro/mesonDeFierro"
+import TheTower from "./components/pages/theTower/TheTower"
+import UnMeteorito from "./components/pages/unMeteorito/UnMeteorito"
+import SanJuan from "./components/pages/sanJuan/SanJuan"
+import Weight from "./components/pages/weight/Weight"
+import LosHoyos from "./components/pages/losHoyos/LosHoyos"
+import Sesion from "./components/pages/sesion/Sesion"
+import Litoteca from "./components/pages/litoteca/Litoteca"
+import Sorpresa from "./components/pages/sorpresa/Sorpresa"
+import Otumpa from "./components/pages/otumpa/Otumpa"
 
 
 function App() {
@@ -34,8 +44,18 @@ function App() {
        <Route path='/bibliography' element={<Bibliography/>}/>
        <Route path='/decomiso' element={<Decomiso/>}/>
        <Route path='/numero' element={<Numero/>}/>
+       <Route path='/mesónDeFierro' element={<MesonDeFierro/>}/>
+       <Route path='/theTowerOfKnowledge' element={<TheTower/>}/>
        <Route path='/elTaco' element={<ElTaco/>}/>
+       <Route path='/UnMeteoritoParaLaSociedadCientíficaArgentinaDelAño2105' element={<UnMeteorito/>}/>
        <Route path='/encuentroConElMataco' element={<EncuentroConElMataco/>}/>
+       <Route path='/theSanJuanMassOfCampoDelCielo' element={<SanJuan/>}/>
+       <Route path='/theWeightOfUncertainty' element={<Weight/>}/>
+       <Route path='/losHoyosDelCampoDelCielo' element={<LosHoyos/>}/>
+       <Route path='/sesionExtraordianariaN2' element={<Sesion/>}/>
+       <Route path='/litoteca' element={<Litoteca/>}/>
+       <Route path='/laSorpresaYlosMeteoritosQueYaNoEstanEnCdelC' element={<Sorpresa/>}/>
+       <Route path='/otumpa' element={<Otumpa/>}/>
        <Route path='*' element={<Cuatrocientos4/>}/>
      </Routes>
 

@@ -5,7 +5,7 @@ import { useTranslation } from 'react-i18next';
 
 
 
-export default function ElTaco() {
+export default function Sorpresa() {
   const [isEnglish, setIsEnglish] = React.useState(true); 
   const { t, i18n } = useTranslation();
 
@@ -47,12 +47,12 @@ export default function ElTaco() {
 <Box  mb={5} sx={{mt:"76px",width:"60%", ml:"20%", mr:"20%"}} >
 
 
-<Box width={"372px"} m={"auto"}>
-<Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">{t("tacoTitulo1")}</Typography>
-  <Typography sx={{mt:"22px", textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">{t("tacoTitulo2")}</Typography>
-  <Typography sx={{ mt:"22px", textAlign:"center",  fontSize:"13px", fontFamily: 'Albert Sans', fontWeight:"500" }} variant="h6">{t("tacoTitulo3")}</Typography>
+<Box width={"472px"} m={"auto"}>
+<Typography sx={{textAlign:"center", fontSize:"31px", fontWeight:"600",lineHeight:"normal", fontFamily: 'Albert Sans', }} variant="h4">{t("sorpresaTitulo1")}</Typography>
+  <Typography sx={{mt:"22px", textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans' }}  variant="subtitle2">{t("sorpresaTitulo2")}</Typography>
+  <Typography sx={{ mt:"22px", textAlign:"center",  fontSize:"13px", fontFamily: 'Albert Sans', fontWeight:"500" }} variant="h6">{t("sorpresaTitulo3")}</Typography>
   <Typography sx={{ mt:"22px",textAlign:"center",  fontSize:"13px", fontWeight:"500", fontFamily: 'Albert Sans', }} variant="subtitle2">
-  {t("tacoTitulo4")}
+  {t("sorpresaTitulo4")}
 
 </Typography>
 </Box>
@@ -61,35 +61,30 @@ export default function ElTaco() {
 <Box  sx={{display: "flex", justifyContent:"center", mt:"84px"   }}>
    <Box textAlign={"justify"} width={"49%"}>
    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
-   {t("tacoTexto1")}
+   {t("sorpresaTexto1")}
 
 </Typography>
 <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto2")}
-</Typography>
-
-<Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}> 
-   {t("tacoTexto3")}
+{t("sorpresaTexto2")}
 
     </Typography>
-    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}> 
-    {t("tacoTexto4")}
+    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%"}}>
+{t("sorpresaTexto3")}
 
     </Typography>
-
    </Box>
    
-   <Box textAlign={"justify"}  width={"49%"}>
+   <Box textAlign={"justify"} ml={"4%"} width={"49%"}>
    <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:2}}> 
-    {t("tacoTexto5")}
+   {t("sorpresaTexto4")}
 
     </Typography>
     <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:2}}> 
-    {t("tacoTexto6")}
+    {t("sorpresaTexto5")}
 
     </Typography>
     <Typography sx={{textIndent:42,fontSize:"15px", fontWeight:"500",lineHeight:"23px", fontFamily: 'Albert Sans', width:"100%", ml:2}}> 
-    {t("tacoTexto7")}
+    {t("sorpresaTexto6")}
 
     </Typography>
    </Box>
@@ -102,12 +97,10 @@ export default function ElTaco() {
 
 <Box sx={{ width:"60%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
 
-<Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/taco/taco1.png" alt="" />
-</Box>
+
 
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/taco/taco2.png" alt="" />
+<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/sorpresa1.png" alt="" />
 </Box>
 
 
@@ -119,58 +112,47 @@ export default function ElTaco() {
 <Hidden smUp>
 <Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
-<Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("tacoTitulo1")}</Typography>
-  <Typography sx={{mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("tacoTitulo2")}</Typography>
-  <Typography sx={{width:"90%",  mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">{t("tacoTitulo3")}</Typography>
-  <Typography sx={{  mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
-  {t("tacoTitulo4")}
+<Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("sorpresaTitulo1")}</Typography>
+  <Typography sx={{ mt:2,fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("sorpresaTitulo2")}</Typography>
+  <Typography sx={{width:"90%",  mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="h6">{t("sorpresaTitulo3")}</Typography>
+  <Typography sx={{ mt:2, fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">
+  {t("sorpresaTitulo4")}
   </Typography>
   
 
 
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
-{t("tacoTexto1")}
+{t("sorpresaTexto1")}
 
 </Typography>
 
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto2")}
+{t("sorpresaTexto2")}
 
 </Typography>
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto3")}
+{t("sorpresaTexto3")}
 
 
 </Typography>
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto4")}
+{t("sorpresaTexto4")}
 
 </Typography>
-
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto5")}
+{t("sorpresaTexto5")}
 
 </Typography>
-
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto6")}
-
-</Typography>
-
-<Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
-{t("tacoTexto7")}
+{t("sorpresaTexto6")}
 
 </Typography>
 </Box>
 
 <Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
 
-<Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/taco/taco1.png" alt="" />
-</Box>
-
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/taco/taco2.png" alt="" />
+<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/sorpresa1.png" alt="" />
 </Box>
 
 

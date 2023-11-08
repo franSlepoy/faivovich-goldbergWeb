@@ -18,8 +18,8 @@ const Home = () => {
     return (
         <>
         <Hidden smDown>
-        <Box sx={{ m: "auto", maxWidth: "60%",  }}> {/* Centra y ajusta el ancho máximo */}
-                <ImageList sx={{mt:"20%", overflow: 'hidden' }} variant="standard" cols={4} gap={20}>
+        <Box sx={{ m: "auto", maxWidth: "60%", mb:"200px"  }}> {/* Centra y ajusta el ancho máximo */}
+                <ImageList sx={{mt:"10%", overflow: 'hidden', p:"56px"  }} variant="standard" cols={4} gap={20}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
@@ -46,8 +46,10 @@ const Home = () => {
                                 color="black"
                                 sx={{
                                     mt:"15%",
+                                   
                                     textAlign: "center",
-                                    fontSize: "1em",
+                                    textTransform:"uppercase",
+                                    fontSize: "19px",
                                     width: "100%", // Usa porcentajes para el ancho
                                     fontFamily: 'Albert Sans',
                                     zIndex: 43,
@@ -62,14 +64,15 @@ const Home = () => {
                                     srcSet={`${seccion.imagen}?w=248&fit=crop&auto=format&dpr=2 2x`}
                                     alt={seccion.titulo}
                                     style={{
-                                        position: "fixed",
+                                        position: "absolute",
                                         zIndex: 100,
-                                       width:"80px",
-                                        height:"80px",
+                                        width: "80px",
+                                        height: "80px",
                                         objectFit: "contain",
-                                        objectPosition: "center center",
-                                       /*  transform: `translate(${cursorPosition.x}px, ${cursorPosition.y}px)`, */
-                                        transform: `translate(${cursorPosition.x - 29}px, ${cursorPosition.y + 40}px)`,
+                                        /* left: "50%",
+                                        top: "-60px", */ // Ajusta esta posición para alinear la imagen según tu diseño
+                                        /* transform: "translateX(-50%)", */
+                                        transform: `translate(${cursorPosition.x - 9}px, ${cursorPosition.y + 40}px)`,
                                     }}
                                 />
                             )}
@@ -89,7 +92,7 @@ const Home = () => {
             <Box sx ={{mt:"20%", width:"98%",mb:5,  display: { xs: "block", sm:"none"}}}>
                 {IndexData.map((proyecto) => (
                     
-                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none", display:"block"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>
+                    <Typography component={NavLink} to={proyecto.link} sx={{fontFamily:'Albert Sans', fontSize:"20px", fontWeight:"400", textDecoration:"none", display:"block", textTransform:"uppercase"}} key={proyecto.id} padding={1} ml={"9px"}  >{proyecto.titulo}</Typography>
                 ))}
             </Box>
             </Hidden>

@@ -1,12 +1,6 @@
 import { mataco} from "./ImegenesData";
 
 export const IndexData = [
-    {id: 10,
-        imagen: mataco,
-        titulo: "Encuentro con El Mataco",
-        link:"/encuentroConElMataco"
-       },
-    
     
     {id: 1, 
          imagen: "/imagenes/index/decomiso.jpg", 
@@ -23,12 +17,13 @@ export const IndexData = [
     {id: 4,
         imagen:  "/imagenes/index/suche.jpg",
         titulo: "Auf der Suche Nach Mesón de Fierro",
-        link:"/numero"
+        link:"/mesónDeFierro"
     },
     {id: 5,
         imagen: "/imagenes/index/SCA.jpg", 
         titulo: "Un meteorito para la Sociedad Científica Argentina del año 2105",
-        link:"/decomiso"
+        link:"/UnMeteoritoParaLaSociedadCientíficaArgentinaDelAño2105",
+        
     },
     {id: 3,
         
@@ -38,29 +33,49 @@ export const IndexData = [
        },
    
     {id: 6,
-        imagen: "/imagenes/index/decomiso.jpg", 
+        imagen: "/imagenes/theTower/tower1.png", 
         titulo: "The Tower of Knowledge",
-        link:"/numero"
+        link:"/theTowerOfKnowledge"
     },
     {id: 7,
-        imagen: "/imagenes/index/numero.jpg", 
+        imagen: "/imagenes/sanJuan/sanJuan2.png", 
         titulo: "The San Juan Mass of Campo del Cielo en la Colección Guerrico",
-        link:"/eltaco"
+        link:"/theSanJuanMassOfCampoDelCielo"
     },
     {id: 8,
-        imagen: "/imagenes/index/mataco.png", 
+        imagen: "/imagenes/w/w1.png", 
         titulo: "the weight of uncertainty",
-        link:"/numero"
+        link:"/theWeightOfUncertainty"
     },
     {id: 9,
-        imagen: "/imagenes/index/decomiso.jpg", 
+        imagen: "/imagenes/hoyos/hoyos1.png", 
         titulo: "Los hoyos del Campo del Cielo y el meteorito",
-        link:"/decomiso"
+        link:"/losHoyosDelCampoDelCielo"
     },
-    {id: 11,
+    {id: 10,
         imagen: mataco,
-        titulo: "sesión extraordinaria nro.2",
+        titulo: "Encuentro con El Mataco",
         link:"/encuentroConElMataco"
+       },
+    {id: 11,
+        imagen: "/imagenes/sesion1.png",
+        titulo: "sesión extraordinaria nro.2",
+        link:"/sesionExtraordianariaN2"
+       },
+       {id: 12,
+        imagen: "/imagenes/sorpresa1.png",
+        titulo: "LA SORPRESA Y LOS METEORITOS QUE YA NO ESTAN EN CAMPO DEL CIELO",
+        link:"/laSorpresaYlosMeteoritosQueYaNoEstanEnCdelC"
+       },
+       {id: 13,
+        imagen: "/imagenes/lito/lito2.png",
+        titulo: "LITOTECA",
+        link:"/litoteca"
+       },
+       {id: 14,
+        imagen: "/imagenes/otumpa/otumpa2.png" ,
+        titulo: "OTUMPA",
+        link:"/otumpa"
        },
     
     

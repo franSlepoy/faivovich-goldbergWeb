@@ -102,7 +102,7 @@ const NavBar1 = () => {
             </AppBar>
 
             <Hidden smUp>
-                <AppBar position="fixed"  sx={{zIndex: 2, boxShadow: 0, bgcolor:"transparent", width:"100%",   }}>
+                <AppBar position="fixed"  sx={{zIndex: 2, boxShadow: 0, bgcolor:"#faf9f6 ", width:"100%",   }}>
                     <Toolbar>
                     <Box width={"100%"} display={"flex"} sx={{ justifyContent:"space-between",  bgcolor:"transparent" }}>
                    <Typography  color="black" sx={{textAlign:"start", fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"500", lineHeight:"normal",   mt:1, }}>
