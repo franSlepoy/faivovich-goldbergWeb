@@ -176,7 +176,7 @@ export default function Numero() {
   
 
 <Hidden smUp>
-<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
+<Box sx={{ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
 <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("numeroTitulo1")}</Typography>
   <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("numeroTitulo2")}</Typography>
@@ -208,7 +208,7 @@ export default function Numero() {
   {t("numeroTitulo12")}
   </Typography>
 
-
+<Box textAlign={"justify"}>
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 {t("numeroTexto1")}
 
@@ -229,54 +229,56 @@ export default function Numero() {
 </Typography>
 </Box>
 
-<Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
-
-<Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio1.png" alt="" />
 </Box>
 
-<Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio2.png" alt="" />
-</Box>
+<Box sx={{  margin:"auto",  overflowY: "clip" }}>
 
-<Box display={"flex"} textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-1.png" alt="" />  
-<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-2.png" alt="" />
+<Box textAlign={"center"}>
+<img style={{marginTop:"40px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio1.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio4.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio2.png" alt="" />
+</Box>
+
+<Box  textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-1.png" alt="" />  
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio3-2.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio5.png" alt="" />
-</Box>
-
-<Box display={"flex"} textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-1.png" alt="" />  
-<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-2.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio4.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio7.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio5.png" alt="" />
+</Box>
+
+<Box  textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-1.png" alt="" />  
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio6-2.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio8.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio7.png" alt="" />
 </Box>
 
-<Box display={"flex"} textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-1.png" alt="" />  
-<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-2.png" alt="" />
+<Box textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio8.png" alt="" />
 </Box>
 
-<Box display={"flex"} textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-1.png" alt="" />  
-<img style={{marginTop:"180px", marginLeft:"5%"}} width={"48%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-2.png" alt="" />
+<Box  textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-1.png" alt="" />  
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio9-2.png" alt="" />
+</Box>
+
+<Box  textAlign={"center"}>
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-1.png" alt="" />  
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio10-2.png" alt="" />
 </Box>
 
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/numeroEscritorio/numeroEscritorio11.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/numeroEscritorio/numeroEscritorio11.png" alt="" />
 </Box>
 
 

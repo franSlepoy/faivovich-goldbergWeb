@@ -135,7 +135,7 @@ export default function MesonDeFierro() {
   
 
 <Hidden smUp>
-<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
+<Box sx={{ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
 <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("mesonTitulo1")}</Typography>
   <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("mesonTitulo2")}</Typography>
@@ -152,8 +152,7 @@ export default function MesonDeFierro() {
   {t("mesonTitulo6")}
   </Typography>
   
-
-
+<Box textAlign={"justify"}>
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 {t("mesonTexto1")}
 
@@ -166,39 +165,42 @@ export default function MesonDeFierro() {
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
 {t("mesonTexto3")}
 </Typography>
+</Box>
+
+
 
 
 
 </Box>
 
-<Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
+<Box sx={{ margin:"auto",  overflowY: "clip" }}>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/mesonDeFierro/meson1.png" alt="" />
+<img style={{marginTop:"40px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson1.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson2.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson2.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson3.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson3.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/mesonDeFierro/meson4.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson4.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/mesonDeFierro/meson5.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson5.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson6.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/mesonDeFierro/meson6.png" alt="" />
 </Box>
 
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"} src="imagenes/mesonDeFierro/meson7.png"  alt="" />
+<img style={{marginTop:"80px"}} width={"100%"} src="imagenes/mesonDeFierro/meson7.png"  alt="" />
 </Box>
 
 

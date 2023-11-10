@@ -141,7 +141,7 @@ export default function Decomiso() {
   
 
 <Hidden smUp>
-<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
+<Box sx={{ml:2, mr:2,mt:"25%", width:"90%"}}>
 <Box sx={{mb:3}}>
 <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("decomisoTitulo1")}</Typography>
   <Typography sx={{ fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("decomisoTitulo2")}</Typography>
@@ -159,7 +159,7 @@ export default function Decomiso() {
   </Typography>
   
 
-
+<Box textAlign={"justify"} >
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 {t("decomisoTexto1")}
 
@@ -189,27 +189,29 @@ export default function Decomiso() {
 <Typography sx={{fontSize:"15px", fontFamily: 'Albert Sans', width:"100%"}}>
 {t("decomisoTexto7")}
 </Typography>
+</Box>
 
-<Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
+
+<Box sx={{   margin:"auto",  overflowY: "clip" }}>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"70%"}  src="imagenes/decomisoEscritorio/decomiso1.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso1.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso2.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso2.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso3.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso3.png" alt="" />
 </Box>
 
 <Box textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"70%"}  src="imagenes/decomisoEscritorio/decomiso4.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso4.png" alt="" />
 </Box>
 
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso5.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/decomisoEscritorio/decomiso5.png" alt="" />
 </Box>
 
 </Box>

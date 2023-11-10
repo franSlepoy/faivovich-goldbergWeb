@@ -35,8 +35,8 @@ function App() {
    
     <Routes>
        
-       <Route path='/' element={<EnConstruccion/>}/>
-       <Route path='/test' element={<Home/>}/>
+       {/* <Route path='/' element={<EnConstruccion/>}/> */}
+       <Route path='/' element={<Home/>}/>
        <Route path='/publications' element={<Publicaciones/>}/>
        <Route path='/menuMobile' element={<MenuMobile/>}/>
        <Route path='/contact' element={<Contacto/>}/>

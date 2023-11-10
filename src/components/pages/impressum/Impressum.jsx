@@ -20,7 +20,9 @@ const Impressum = () => {
   return (
     <>
    <Hidden smDown>
-   
+   <Typography   color="black"sx={{mt:"1.3%",textAlign:"center", fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", }}>
+                        FAIVOVICH & GOLDBERG
+                    </Typography>
    
 <Box >
  <Typography

@@ -108,7 +108,7 @@ export default function SanJuan() {
   
 
 <Hidden smUp>
-<Box sx={{textAlign:"justify",ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
+<Box sx={{ml:2, mr:2,mt:"25%", maxWidth:"90%"}}>
 <Box sx={{mb:3}}>
 <Typography sx={{ fontSize:19,fontWeight:"600", fontFamily: 'Albert Sans', }} variant="h4">{t("sanJuanTitulo1")}</Typography>
   <Typography sx={{ mt:2,fontSize:15, fontFamily: 'Albert Sans' }} variant="subtitle2">{t("sanJuanTitulo2")}</Typography>
@@ -117,8 +117,7 @@ export default function SanJuan() {
   {t("sanJuanTitulo4")}
   </Typography>
   
-
-
+<Box textAlign={"justify"}>
 <Typography sx={{  mt:2,fontSize:15, fontFamily: 'Albert Sans', width:"100%"}}> 
 {t("sanJuanTexto1")}
 
@@ -139,15 +138,18 @@ export default function SanJuan() {
 </Typography>
 </Box>
 
-<Box sx={{ width:"90%", ml:"20%", mr:"20%", margin:"auto",  overflowY: "clip" }}>
+
+</Box>
+
+<Box sx={{  margin:"auto",  overflowY: "clip" }}>
 <Box textAlign={"center"}>
-<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/sanJuan/sanJuan1.png" alt="" />
+<img style={{marginTop:"40px"}} width={"100%"}  src="imagenes/sanJuan/sanJuan1.png" alt="" />
 </Box>
 
 
 
 <Box mb={"290px"}  textAlign={"center"}>
-<img style={{marginTop:"180px"}} width={"100%"}  src="imagenes/sanJuan/sanJuan2.png" alt="" />
+<img style={{marginTop:"80px"}} width={"100%"}  src="imagenes/sanJuan/sanJuan2.png" alt="" />
 </Box>
 
 

@@ -16,6 +16,9 @@ const MenuMobile = () => {
       <Typography sx={{fontSize:"20px",fontFamily:'Albert Sans', mt:2, textDecoration:"none"}} component={NavLink} to={"/bibliography"}>
         BIBLIOGRAPHY
       </Typography>
+      <Typography sx={{fontSize:"20px",fontFamily:'Albert Sans', mt:2, textDecoration:"none"}} component={NavLink} to={"/publications"}>
+        PUBLICATIONS
+      </Typography>
       <Typography sx={{fontSize:"20px",fontFamily:'Albert Sans', mt:2, textDecoration:"none"}}>
         ENG / ESP
       </Typography>

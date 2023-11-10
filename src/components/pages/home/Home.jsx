@@ -14,12 +14,16 @@ const Home = () => {
     };
 
     const [hoveredIndex, setHoveredIndex] = useState(null);
+    
 
     return (
         <>
         <Hidden smDown>
-        <Box sx={{ m: "auto", maxWidth: "60%", mb:"200px"  }}> {/* Centra y ajusta el ancho máximo */}
-                <ImageList sx={{mt:"10%", overflow: 'hidden', p:"56px"  }} variant="standard" cols={4} gap={20}>
+        <Typography   color="black"sx={{mt:"1.3%",textAlign:"center", fontFamily: 'Albert Sans', fontSize:"19px", fontWeight:"600", lineHeight:"normal", }}>
+                        FAIVOVICH & GOLDBERG
+                    </Typography>
+        <Box sx={{ m: "auto", maxWidth: "65%", mb:"200px",   }}> {/* Centra y ajusta el ancho máximo */}
+                <ImageList sx={{mt:"10%", overflow: 'hidden', p:"56px",      }} variant="standard" cols={4} gap={20}>
                     {IndexData.map((seccion, index) => (
                         <ImageListItem
                             key={seccion.id}
@@ -27,7 +31,7 @@ const Home = () => {
                             to={seccion.link}
                             style={linkStyle}
                             sx={{
-                               
+                              
                                 mb: 5,
                                 position: "relative",
                                 width: "100%", // Usa porcentajes para el ancho
@@ -84,7 +88,7 @@ const Home = () => {
         </Hidden>
             
 
-            <Hidden smUp>
+          
             <Hidden smUp>
            {/*  <Typography sx={{fontFamily:'Albert Sans', fontSize:"19px", fontWeight:"600", textDecoration:"none",p:1, ml:"9px", mt:"25%"}}>INDEX</Typography> */}
             
@@ -96,7 +100,7 @@ const Home = () => {
                 ))}
             </Box>
             </Hidden>
-            </Hidden>
+           
         </>
     );
 };
