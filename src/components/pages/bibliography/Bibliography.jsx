@@ -6,7 +6,7 @@ const Bibliography = () => {
     
   return (
     <>
-          <Typography sx={{fontFamily:"Albert Sans",fontSize:"33px", fontWeight:"600", textAlign:"center", mt:"15%", display: { xs: "none", sm:"block"} }} >BIBLIOGRAPHY</Typography>
+          <Typography sx={{fontFamily:"Albert Sans",fontSize:"33px", fontWeight:"600", textAlign:"center", mt:"15%", display: { xs: "none", sm:"block"} }} >BIBLIOGRAPHIA</Typography>
      <Box  sx={{width:"60%",mb:5,mt:"5%", ml:"22%", mr:"20%",fontFamily:"Albert Sans", display: { xs: "none", sm:"flex"}}} >
 
       <Box sx={{width:"45%"}} textAlign={"justify"}>
@@ -251,7 +251,7 @@ WERNEBURG, B. (2012, junio). “dOCUMENTA (13): sechs. Faivovich & Goldberg.” 
   
    <Box sx={{textAlign:"justify", width:"90%", ml:2, mt:"25%",display:{ xs: "block", sm:"none"}}}>
    
-   <Typography sx={{mb:4, fontSize:"19px", fontWeight:"600", fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHY</Typography>
+   <Typography sx={{mb:4, fontSize:"19px", fontWeight:"600", fontFamily:"Albert Sans",}} variant='h3'>BIBLIOGRAPHIA</Typography>
    
    <Typography sx={{fontSize:"15px",fontStyle:"normal", fontWeight:"500", lineHeight:"17px", marginTop:"15px"}}>
 ADNAN, E. (2012). “The Movement of El Chaco”. The Campo del Cielo Meteorites – Vol. II: Chaco. dOCUMENTA (13). Colonia, Alemania: Walther König. </Typography>
