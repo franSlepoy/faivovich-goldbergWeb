@@ -55,12 +55,12 @@ export const IndexData = [
         link:"/UnMeteoritoParaLaSociedadCientíficaArgentinaDelAño2105",
         },
         {id: 11,
-        imagen: "/imagenes/theTower/tower1.png", 
+        imagen: "/imagenes/theTower/tower2.png", 
         titulo: "The Tower of Knowledge",
         link:"/theTowerOfKnowledge"
         },
         {id: 12,
-            imagen: "/imagenes/lito/lito2.png",
+            imagen: "/imagenes/lito/lito1.png",
             titulo: "LITOTECA",
             link:"/litoteca"
            },
